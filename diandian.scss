@@ -244,29 +244,51 @@ section#banner {
 // section#about
 section#about {
     width: 100%;
-    background-color: red;
-.about-order-1{
-    @media(max-width:992px){
-order1
+        @media(max-width:991px) {
+            .title-order {order: 2
+            }
+            .pic-order{
+                order: 1;
+                display: flex;
+                justify-content: center;
+            }
+        }
     }
-}
+
+      
+    
+
     .pic {
         height: 400px;
         background-size: cover;
         background-position: center;
         margin-top: 118px;
-        @media(max-width:992px){
-        }
+@media(max-width: 991px){
 
+
+}
+           
+    
     }
 
     .title {
         font-size: 42px;
         letter-spacing: 8.5px;
         margin-top: 110px;
+        @media(max-width:991px){
+            margin-top:0;
+            position:relative;
+        }
+
 
         h2 {
             margin-bottom: 70px;
+            @media(max-width:991px){position: absolute;
+            top:-470px;
+            left: calc(50% - 101px);
+            text-align: center;  
+            }
+
 
         }
 
@@ -280,19 +302,18 @@ order1
 
         }
     }
-}
+
 
 
 
 
 // about-2
 section#about-2 {
-    .container {
-        .about-2-img {
-            padding: 210px 0 50px 175px;
-            background-color: blue;
-        }
+    .about-2-img {
+        padding: 210px 0 50px 175px;
+        background-color: blue;
     }
+   
 }
 
 
@@ -382,7 +403,6 @@ section#booking {
 
             .cup {
                 width: 340px;
-                background-color: red;
                 margin: auto;
                 display: flex;
                 justify-content: space-around;
@@ -410,7 +430,6 @@ section#booking {
                 .btm-line {
                     width: 340px;
                     height: 70px;
-                    background-color: red;
                     margin: auto;
 
                 }

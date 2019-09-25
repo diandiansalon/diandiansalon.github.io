@@ -232,36 +232,70 @@ section#banner .swiper-slide {
 
 section#about {
   width: 100%;
-  background-color: red;
 }
 
-section#about .pic {
+@media (max-width: 991px) {
+  section#about .title-order {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+  section#about .pic-order {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+.pic {
   height: 400px;
   background-size: cover;
   background-position: center;
   margin-top: 118px;
 }
 
-section#about .title {
+.title {
   font-size: 42px;
   letter-spacing: 8.5px;
   margin-top: 110px;
 }
 
-section#about .title h2 {
+@media (max-width: 991px) {
+  .title {
+    margin-top: 0;
+    position: relative;
+  }
+}
+
+.title h2 {
   margin-bottom: 70px;
 }
 
-section#about .title h5 {
+@media (max-width: 991px) {
+  .title h2 {
+    position: absolute;
+    top: -470px;
+    left: calc(50% - 101px);
+    text-align: center;
+  }
+}
+
+.title h5 {
   padding-bottom: 70px;
 }
 
-section#about .title .logo {
+.title .logo {
   width: 104px;
   padding-bottom: 130px;
 }
 
-section#about-2 .container .about-2-img {
+section#about-2 .about-2-img {
   padding: 210px 0 50px 175px;
   background-color: blue;
 }
@@ -335,7 +369,6 @@ section#booking .container .content .paw i {
 
 section#booking .container .content .cup {
   width: 340px;
-  background-color: red;
   margin: auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -365,7 +398,6 @@ section#booking .container .content .cup .cup-right {
 section#booking .container .content .text .btm-line {
   width: 340px;
   height: 70px;
-  background-color: red;
   margin: auto;
 }
 
