@@ -9,6 +9,7 @@
 //     height: 100%;
 // }
 .container {
+    width: 75%;
     max-width: 1440px !important;
 }
 
@@ -244,66 +245,58 @@ section#banner {
 section#about {
     width: 100%;
     background-color: red;
-
+.about-order-1{
+    @media(max-width:992px){
+order1
+    }
+}
     .pic {
-        width: 100%;
-        height: 403px;
-        background-image: url('/img/corneranimal.jpg');
+        height: 400px;
         background-size: cover;
-        background-color: blueviolet;
+        background-position: center;
         margin-top: 118px;
-
+        @media(max-width:992px){
+        }
 
     }
 
     .title {
         font-size: 42px;
         letter-spacing: 8.5px;
-        margin-top: 118px;
+        margin-top: 110px;
 
         h2 {
-            margin-bottom: 82px;
+            margin-bottom: 70px;
 
         }
 
         h5 {
-            padding-bottom: 200px;
+            padding-bottom: 70px;
         }
 
         .logo {
             width: 104px;
-            height: 92px;
+            padding-bottom: 130px;
+
+        }
+    }
+}
+
+
+
+
+// about-2
+section#about-2 {
+    .container {
+        .about-2-img {
+            padding: 210px 0 50px 175px;
             background-color: blue;
-            margin-top: 71px;
         }
     }
 }
 
 
 
-
-
-
-
-
-//section#transition
-section#transition {
-    div.pic {
-        width: 100%;
-        height: 380px;
-        background-image: url('/img/團聚.jpg');
-        display: flex;
-
-        .title {
-            // margin: auto;
-            font-size: 62px;
-            padding-top: 90px;
-            padding-bottom: 220px;
-            padding-left: 175px;
-            letter-spacing: 8.5px;
-        }
-    }
-}
 
 
 
@@ -789,11 +782,69 @@ section#service {
 
 // service02
 section#service-2 {
-    margin: 10px 0;
-    .container {
-        
+    padding: 10px 0;
+    background-color: blue;
 
-       
+    .container {
+
+        .service-2-all {
+            display: flex;
+            justify-content: center;
+
+            .service-2-left {
+                width: 200px;
+                height: 100;
+                background-color: red;
+                writing-mode: vertical-lr;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .service-2-top {
+                display: flex;
+                justify-content: space-between;
+            }
+
+            .service-2-btm {
+                display: flex;
+                justify-content: space-between;
+            }
+
+            .service-2-img {
+                width: 335px;
+                height: 313px;
+                background-color: black;
+                margin: 10px;
+            }
+
+            .service-2-right {
+                width: 200px;
+                height: 100;
+                background-color: red;
+                writing-mode: vertical-lr;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+
+
+
+
+
+
+
+
+
+
+
+        }
+
+
+
+
+
 
 
 

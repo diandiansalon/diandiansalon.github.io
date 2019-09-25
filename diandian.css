@@ -1,6 +1,6 @@
-@charset "UTF-8";
 @import url(https://fonts.googleapis.com/css?family=Pacifico);
 .container {
+  width: 75%;
   max-width: 1440px !important;
 }
 
@@ -236,50 +236,34 @@ section#about {
 }
 
 section#about .pic {
-  width: 100%;
-  height: 403px;
-  background-image: url("/img/corneranimal.jpg");
+  height: 400px;
   background-size: cover;
-  background-color: blueviolet;
+  background-position: center;
   margin-top: 118px;
 }
 
 section#about .title {
   font-size: 42px;
   letter-spacing: 8.5px;
-  margin-top: 118px;
+  margin-top: 110px;
 }
 
 section#about .title h2 {
-  margin-bottom: 82px;
+  margin-bottom: 70px;
 }
 
 section#about .title h5 {
-  padding-bottom: 200px;
+  padding-bottom: 70px;
 }
 
 section#about .title .logo {
   width: 104px;
-  height: 92px;
+  padding-bottom: 130px;
+}
+
+section#about-2 .container .about-2-img {
+  padding: 210px 0 50px 175px;
   background-color: blue;
-  margin-top: 71px;
-}
-
-section#transition div.pic {
-  width: 100%;
-  height: 380px;
-  background-image: url("/img/團聚.jpg");
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-section#transition div.pic .title {
-  font-size: 62px;
-  padding-top: 90px;
-  padding-bottom: 220px;
-  padding-left: 175px;
-  letter-spacing: 8.5px;
 }
 
 section#unfamiliar {
@@ -730,7 +714,78 @@ section#service .service-btm-center .swiper-slide {
 }
 
 section#service-2 {
-  margin: 10px 0;
+  padding: 10px 0;
+  background-color: blue;
+}
+
+section#service-2 .container .service-2-all {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+section#service-2 .container .service-2-all .service-2-left {
+  width: 200px;
+  height: 100;
+  background-color: red;
+  -webkit-writing-mode: vertical-lr;
+      -ms-writing-mode: tb-lr;
+          writing-mode: vertical-lr;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+section#service-2 .container .service-2-all .service-2-top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+section#service-2 .container .service-2-all .service-2-btm {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+section#service-2 .container .service-2-all .service-2-img {
+  width: 335px;
+  height: 313px;
+  background-color: black;
+  margin: 10px;
+}
+
+section#service-2 .container .service-2-all .service-2-right {
+  width: 200px;
+  height: 100;
+  background-color: red;
+  -webkit-writing-mode: vertical-lr;
+      -ms-writing-mode: tb-lr;
+          writing-mode: vertical-lr;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 section#product {
