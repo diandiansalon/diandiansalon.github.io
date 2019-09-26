@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url(https://fonts.googleapis.com/css?family=Pacifico);
 .container {
   width: 85%;
@@ -502,18 +503,16 @@ section#menu .container .menu-swiper .swiper-slide {
   display: -webkit-flex;
 }
 
-section#service {
-  background-color: red;
-}
-
 section#service h2 {
   text-align: center;
   padding: 122px 0 130px 0;
+  color: #F4B9AB;
 }
 
 section#service h3 {
   text-align: center;
   margin: 20px 0;
+  color: #F4B9AB;
 }
 
 @media (max-width: 991px) {
@@ -557,7 +556,6 @@ section#service .service-btm-right-order {
 }
 
 section#service .service-btm-left {
-  background-color: cyan;
   padding: 100px 0 50px 0;
 }
 
@@ -575,7 +573,6 @@ section#service .service-btm-left .service-btm-left-top .service-btm-left-top-im
   width: 65px;
   height: 65px;
   border-radius: 65px;
-  background-color: black;
   background-image: url("./service-icon/Light-001-14.png");
   background-size: cover;
   background-position: center;
@@ -596,7 +593,7 @@ section#service .service-btm-left .service-btm-left-top:hover .service-btm-left-
 }
 
 section#service .service-btm-left .service-btm-left-top:hover h3 {
-  color: white;
+  color: #DAA183;
 }
 
 section#service .service-btm-left .service-btm-left-btm {
@@ -607,7 +604,6 @@ section#service .service-btm-left .service-btm-left-btm .service-btm-left-btm-im
   width: 65px;
   height: 65px;
   border-radius: 65px;
-  background-color: black;
   background-image: url("./service-icon/Light-003-14.png");
   background-size: cover;
   background-position: center;
@@ -628,11 +624,10 @@ section#service .service-btm-left .service-btm-left-btm:hover .service-btm-left-
 }
 
 section#service .service-btm-left .service-btm-left-btm:hover h3 {
-  color: white;
+  color: #DAA183;
 }
 
 section#service .service-btm-right {
-  background-color: green;
   padding: 100px 0 50px 0;
 }
 
@@ -650,7 +645,6 @@ section#service .service-btm-right .service-btm-right-top .service-btm-right-top
   width: 65px;
   height: 65px;
   border-radius: 65px;
-  background-color: #c21010;
   background-image: url("./service-icon/Light-002-14.png");
   background-size: cover;
   background-position: center;
@@ -671,7 +665,7 @@ section#service .service-btm-right .service-btm-right-top:hover .service-btm-rig
 }
 
 section#service .service-btm-right .service-btm-right-top:hover h3 {
-  color: white;
+  color: #DAA183;
 }
 
 section#service .service-btm-right .service-btm-right-btm {
@@ -682,7 +676,6 @@ section#service .service-btm-right .service-btm-right-btm .service-btm-right-btm
   width: 65px;
   height: 65px;
   border-radius: 65px;
-  background-color: black;
   background-image: url("./service-icon/Light-004-14.png");
   background-size: cover;
   background-position: center;
@@ -703,7 +696,7 @@ section#service .service-btm-right .service-btm-right-btm:hover .service-btm-rig
 }
 
 section#service .service-btm-right .service-btm-right-btm:hover h3 {
-  color: white;
+  color: #DAA183;
 }
 
 section#service .service-btm-center {
@@ -745,169 +738,33 @@ section#service .service-btm-center .swiper-slide {
 }
 
 section#service-2 {
-  padding: 10px 0;
+  height: 640px;
   background-color: blue;
 }
 
-section#service-2 .container .service-2-all {
-  width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-section#service-2 .container .service-2-all .service-2-img {
-  width: 100%;
-  height: 541px;
-  margin: unset;
-}
-
-section#service-2 .container .service-2-all .swiper-container {
-  width: 100%;
+section#service-2 .container {
   height: 100%;
-}
-
-@media (min-width: 992px) {
-  section#service-2 .container .service-2-all .swiper-container {
-    display: none;
-  }
-}
-
-section#service-2 .container .service-2-all .swiper-slide {
-  text-align: center;
-  font-size: 18px;
-  background: #fff;
-  /* Center slide text vertically */
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
 }
 
 section#service-2 .container .service-2-left {
-  width: 20%;
-  height: calc(100% - 20px);
-  -webkit-writing-mode: vertical-lr;
-      -ms-writing-mode: tb-lr;
-          writing-mode: vertical-lr;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  border: 10px solid #F4B9AB;
-}
-
-@media (max-width: 991px) {
-  section#service-2 .container .service-2-left {
-    height: 541px;
-  }
-}
-
-section#service-2 .container .service-2-center {
-  width: calc(100% - 10px);
-  margin: 0 5px;
-}
-
-section#service-2 .container .service-2-center .service-2-top {
-  width: 100%;
-  height: 50%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
-@media (max-width: 991px) {
-  section#service-2 .container .service-2-center .service-2-top {
-    display: none;
-  }
-}
-
-section#service-2 .container .service-2-center .service-2-btm {
-  width: 100%;
-  height: 50%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
-@media (max-width: 991px) {
-  section#service-2 .container .service-2-center .service-2-btm {
-    display: none;
-  }
-}
-
-section#service-2 .container .service-2-img {
-  width: 100%;
-  height: calc(100% - 20px);
-  background-color: #7e0d0d;
-  margin: 10px;
-}
-
-section#service-2 .container .service-2-img.img1 {
-  background-image: url("./08-service-transition/08--service-transition-grooming.png");
-  background-size: cover;
-  background-position: center;
-}
-
-section#service-2 .container .service-2-img.img2 {
-  background-image: url("./08-service-transition/08--service-transition-petshome.png");
-  background-size: cover;
-  background-position: center;
-}
-
-section#service-2 .container .service-2-img.img3 {
-  background-image: url("./08-service-transition/08--service-transition-date.png");
-  background-size: cover;
-  background-position: center;
-}
-
-section#service-2 .container .service-2-img.img4 {
-  background-image: url("./08-service-transition/08--service-transition-training.png");
-  background-size: cover;
-  background-position: center;
+  width: 15%;
+  height: 100%;
+  background-color: red;
 }
 
 section#service-2 .container .service-2-right {
-  width: 20%;
-  height: calc(100% - 20px);
-  -webkit-writing-mode: vertical-lr;
-      -ms-writing-mode: tb-lr;
-          writing-mode: vertical-lr;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  border: 10px solid #F4B9AB;
+  width: 15%;
+  height: 100%;
+  background-color: red;
 }
 
-@media (max-width: 991px) {
-  section#service-2 .container .service-2-right {
-    height: 541px;
-  }
+section#service-2 .container .service-2-center {
+  width: 65%;
+  height: 100%;
+  background-color: green;
 }
 
 section#product {
@@ -990,6 +847,12 @@ section#product .container .product-btm {
   position: relative;
 }
 
+@media (max-width: 991px) {
+  section#product .container .product-btm {
+    height: 400px;
+  }
+}
+
 @media (max-width: 767px) {
   section#product .container .product-btm {
     display: none;
@@ -1022,22 +885,133 @@ section#product .container .product-btm .swiper-slide {
   align-items: center;
 }
 
+section#product .container .product-btm .swiper-slide .product-swiper-img1 {
+  width: 60%;
+  height: 100%;
+  background-image: url("./09-product/改-01-_工作區域 1.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+section#product .container .product-btm .swiper-slide .product-swiper-img2 {
+  width: 60%;
+  height: 100%;
+  background-image: url("./09-product/02-點心1.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+section#product .container .product-btm .swiper-slide .product-swiper-img3 {
+  width: 60%;
+  height: 100%;
+  background-image: url("./09-product/05-美容6_工作區域 1.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+section#product .container .product-btm .swiper-slide .product-swiper-img4 {
+  width: 60%;
+  height: 100%;
+  background-image: url("./09-product/04-外出1_工作區域 1.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+section#product .container .product-btm .swiper-slide .product-swiper-img5 {
+  width: 60%;
+  height: 100%;
+  background-image: url("./09-product/04-外出2_工作區域 1_工作區域 1.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+section#product .container .product-btm .swiper-slide .product-swiper-img6 {
+  width: 60%;
+  height: 100%;
+  background-image: url("./09-product/06-保健_工作區域 1.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+section#product .container .product-btm .swiper-slide .product-swiper-side {
+  width: 40%;
+  height: 100%;
+  position: relative;
+}
+
+section#product .container .product-btm .swiper-slide .product-swiper-side h3 {
+  text-align: left;
+  position: absolute;
+  top: 130px;
+  left: 50px;
+  color: white;
+}
+
+section#product .container .product-btm .swiper-slide .product-swiper-side h6 {
+  text-align: left;
+  top: 180px;
+  left: 50px;
+  color: white;
+}
+
+section#product .container .product-btm .product-swiper-side1 {
+  background-color: #C16C19;
+}
+
+section#product .container .product-btm .product-swiper-side2 {
+  background-color: #FFC069;
+}
+
+section#product .container .product-btm .product-swiper-side3 {
+  background-color: #F4B9AB;
+}
+
+section#product .container .product-btm .product-swiper-side4 {
+  background-color: #B39E9B;
+}
+
+section#product .container .product-btm .product-swiper-side5 {
+  background-color: #6C2457;
+}
+
+section#product .container .product-btm .product-swiper-side6 {
+  background-color: #6C7091;
+}
+
 section#golden-ratio {
+  margin-top: 50px;
   background-color: chocolate;
+  height: 600px;
+  background-image: url("./10-product-transition/10-product-transition-goldenratio.png");
+  background-size: cover;
+  background-position: center;
+  position: relative;
 }
 
-section#golden-ratio h1 {
-  padding: 167px 0 310px 0;
+section#golden-ratio .content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  color: white;
+  position: absolute;
+  right: 100px;
+  bottom: 100px;
 }
 
-section#golden-ratio h5 {
-  padding: 448px 0 48px 0;
+section#golden-ratio .content h1 {
+  text-align: right;
 }
 
-@media (max-width: 575px) {
-  section#golden-ratio h5 {
-    padding: 5% 0 20% 0;
-  }
+section#golden-ratio .content h5 {
+  text-align: right;
+  max-width: 65%;
 }
 
 section#people {

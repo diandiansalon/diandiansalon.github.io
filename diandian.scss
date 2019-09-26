@@ -564,17 +564,18 @@ section#menu {
 // service
 
 section#service {
-    background-color: red;
+  
 
     h2 {
         text-align: center;
         padding: 122px 0 130px 0;
+        color: #F4B9AB;
     }
 
     h3 {
         text-align: center;
         margin: 20px 0;
-
+color:#F4B9AB;  
         @media(max-width:991px) {
             margin-top: 78px;
         }
@@ -606,7 +607,7 @@ section#service {
 
 
     .service-btm-left {
-        background-color: cyan;
+       
         padding: 100px 0 50px 0;
 
         @media (max-width:991px) {
@@ -620,7 +621,6 @@ section#service {
                 width: 65px;
                 height: 65px;
                 border-radius: 65px;
-                background-color: black;
                 background-image: url("./service-icon/Light-001-14.png");
                 background-size: cover;
                 background-position: center;
@@ -640,7 +640,7 @@ section#service {
         }
 
         .service-btm-left-top:hover h3 {
-            color: white;
+            color: #DAA183;
         }
 
 
@@ -654,7 +654,6 @@ section#service {
                 width: 65px;
                 height: 65px;
                 border-radius: 65px;
-                background-color: black;
                 background-image: url("./service-icon/Light-003-14.png");
                 background-size: cover;
                 background-position: center;
@@ -675,13 +674,12 @@ section#service {
         }
 
         .service-btm-left-btm:hover h3 {
-            color: white;
+            color: #DAA183;
         }
     }
 
 
     .service-btm-right {
-        background-color: green;
         padding: 100px 0 50px 0;
 
         @media (max-width:991px) {
@@ -695,7 +693,6 @@ section#service {
                 width: 65px;
                 height: 65px;
                 border-radius: 65px;
-                background-color: rgb(194, 16, 16);
                 background-image: url("./service-icon/Light-002-14.png");
                 background-size: cover;
                 background-position: center;
@@ -715,7 +712,7 @@ section#service {
         }
 
         .service-btm-right-top:hover h3 {
-            color: white;
+            color: #DAA183;
         }
 
 
@@ -727,7 +724,6 @@ section#service {
                 width: 65px;
                 height: 65px;
                 border-radius: 65px;
-                background-color: black;
                 background-image: url("./service-icon/Light-004-14.png");
                 background-size: cover;
                 background-position: center;
@@ -747,7 +743,7 @@ section#service {
         }
 
         .service-btm-right-btm:hover h3 {
-            color: white;
+            color: #DAA183;
         }
     }
 
@@ -804,150 +800,34 @@ section#service {
 
 
 // service02
-section#service-2 {
-    padding: 10px 0;
-    background-color: blue;
-
-    .container {
-
-        .service-2-all {
-            width: 100%;
-            display: flex;
-            justify-content: center;
-
-            // swiper
-            .service-2-img {
-                width: 100%;
-                height: 541px;
-                margin: unset;
-            }
-
-            .swiper-container {
-                width: 100%;
-                height: 100%;
-
-                @media (min-width:992px) {
-                    display: none;
-                }
-            }
-
-            .swiper-slide {
-                text-align: center;
-                font-size: 18px;
-                background: #fff;
-                /* Center slide text vertically */
-                display: -webkit-box;
-                display: -ms-flexbox;
-                display: -webkit-flex;
-                display: flex;
-                -webkit-box-pack: center;
-                -ms-flex-pack: center;
-                -webkit-justify-content: center;
-                justify-content: center;
-                -webkit-box-align: center;
-                -ms-flex-align: center;
-                -webkit-align-items: center;
-                align-items: center;
-            }
-
-
-        }
-
-        .service-2-left {
-            width: 20%;
-            height: calc(100% - 20px);
-            writing-mode: vertical-lr;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            border: 10px solid #F4B9AB;
-
-            @media(max-width: 991px) {
-                height: 541px;
-            }
-        }
-
-        .service-2-center {
-            width: calc(100% - 10px);
-            margin: 0 5px;
-
-            .service-2-top {
-                width: 100%;
-                height: 50%;
-                display: flex;
-                justify-content: space-between;
-
-                @media(max-width: 991px) {
-                    display: none;
-                }
-            }
-
-            .service-2-btm {
-                width: 100%;
-                height: 50%;
-                display: flex;
-                justify-content: space-between;
-
-                @media(max-width: 991px) {
-                    display: none;
-                }
-            }
-        }
-
-        .service-2-img {
-            width: 100%;
-            height: calc(100% - 20px);
-            background-color: rgb(126, 13, 13);
-            margin: 10px;
-
-        }
-
-        .service-2-img.img1 {
-            background-image: url('./08-service-transition/08--service-transition-grooming.png');
-            background-size: cover;
-            background-position: center;
-        }
-
-        .service-2-img.img2 {
-            background-image: url('./08-service-transition/08--service-transition-petshome.png');
-            background-size: cover;
-            background-position: center;
-        }
-
-        .service-2-img.img3 {
-            background-image: url('./08-service-transition/08--service-transition-date.png');
-            background-size: cover;
-            background-position: center;
-        }
-
-        .service-2-img.img4 {
-            background-image: url('./08-service-transition/08--service-transition-training.png');
-            background-size: cover;
-            background-position: center;
-        }
+section#service-2{
+height: 640px;
+background-color: blue;
+.container{
+    height: 100%;
+    display: flex;
+    
+.service-2-left{
+    width: 15%;
+    height: 100%;
+    background-color: red;
+}
+.service-2-right{
+    width: 15%;
+    height: 100%;
+    background-color: red;
+}
+.service-2-center{
+    width: 65%;
+    height: 100%;
+    background-color: green;
+}
 
 
 
 
 
-
-
-        .service-2-right {
-            width: 20%;
-            height: calc(100% - 20px);
-            writing-mode: vertical-lr;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            border: 10px solid #F4B9AB;
-
-            @media(max-width: 991px) {
-                height: 541px;
-            }
-        }
-
-    }
-
+}
 }
 
 
@@ -1053,6 +933,10 @@ section#product {
             background-color: black;
             position: relative;
 
+            @media(max-width:991px) {
+                height: 400px;
+            }
+
             @media(max-width:767px) {
                 display: none;
             }
@@ -1084,33 +968,144 @@ section#product {
                 -ms-flex-align: center;
                 -webkit-align-items: center;
                 align-items: center;
-            }
-        }
 
+
+                .product-swiper-img1 {
+                    width: 60%;
+                    height: 100%;
+                    background-image: url('./09-product/改-01-_工作區域\ 1.jpg');
+                    background-size: cover;
+                    background-position: center;
+                }
+
+                .product-swiper-img2 {
+                    width: 60%;
+                    height: 100%;
+                    background-image: url('./09-product/02-點心1.jpg');
+                    background-size: cover;
+                    background-position: center;
+                }
+
+                .product-swiper-img3 {
+                    width: 60%;
+                    height: 100%;
+                    background-image: url('./09-product/05-美容6_工作區域\ 1.jpg');
+                    background-size: cover;
+                    background-position: center;
+                }
+
+                .product-swiper-img4 {
+                    width: 60%;
+                    height: 100%;
+                    background-image: url('./09-product/04-外出1_工作區域\ 1.jpg');
+                    background-size: cover;
+                    background-position: center;
+                }
+
+                .product-swiper-img5 {
+                    width: 60%;
+                    height: 100%;
+                    background-image: url('./09-product/04-外出2_工作區域\ 1_工作區域\ 1.jpg');
+                    background-size: cover;
+                    background-position: center;
+                }
+
+                .product-swiper-img6 {
+                    width: 60%;
+                    height: 100%;
+                    background-image: url('./09-product/06-保健_工作區域\ 1.jpg');
+                    background-size: cover;
+                    background-position: center;
+                }
+
+                .product-swiper-side {
+                    width: 40%;
+                    height: 100%;
+                    position: relative;
+
+
+
+                    h3 {
+                        text-align: left;
+                        position: absolute;
+                        top: 130px;
+                        left: 50px;
+                        color: white;
+                    }
+
+                    h6 {
+                        text-align: left;
+                        top: 180px;
+                        left: 50px;
+                        color: white;
+                    }
+                }
+
+            }
+
+            .product-swiper-side1 {
+                background-color: #C16C19;
+            }
+
+            .product-swiper-side2 {
+                background-color: #FFC069;
+            }
+
+            .product-swiper-side3 {
+                background-color: #F4B9AB;
+            }
+
+            .product-swiper-side4 {
+                background-color: #B39E9B;
+            }
+
+            .product-swiper-side5 {
+                background-color: #6C2457;
+            }
+
+            .product-swiper-side6 {
+                background-color: #6C7091;
+            }
+
+
+        }
     }
+
 }
+
 
 
 
 
 // golden-ratio
 section#golden-ratio {
+    margin-top: 50px;
     background-color: chocolate;
+    height: 600px;
+    background-image: url('./10-product-transition/10-product-transition-goldenratio.png');
+    background-size: cover;
+    background-position: center;
+    position: relative;
 
-    h1 {
-        padding: 167px 0 310px 0;
-    }
+    .content {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        color: white;
+        position: absolute;
+        right: 100px;
+        bottom: 100px;
 
-    h5 {
-        padding: 448px 0 48px 0;
+        h1 {
+            text-align: right;
+        }
 
-        @media(max-width: 575px) {
-            padding: 5% 0 20% 0;
+        h5 {
+            text-align: right;
+            max-width: 65%;
         }
     }
 }
-
-
 
 
 
@@ -1118,19 +1113,21 @@ section#golden-ratio {
 section#people {
     background-color: coral;
     padding: 48px 0 125px 0;
-h2{
-    text-align: center;
-padding-bottom: 70px;}
-   
+
+    h2 {
+        text-align: center;
+        padding-bottom: 70px;
+    }
+
     h4 {
         text-align: center;
-        color:#E29B5E;
-        
+        color: #E29B5E;
+
     }
 
     h5 {
         line-height: 30px;
-        color:#E29B5E;
+        color: #E29B5E;
     }
 
     .people-btm {
@@ -1163,7 +1160,7 @@ padding-bottom: 70px;}
 
 
                 .people-btm-left-hover-outside {
-                   
+
                     height: 250px;
                     width: 220px;
                     position: relative;
@@ -1171,8 +1168,9 @@ padding-bottom: 70px;}
                     left: -120px;
                     top: 140px;
                     display: none;
+
                     @media(max-width: 1439px) {
-                        display:none;
+                        display: none;
                     }
 
                     .circle1 {
@@ -1205,11 +1203,12 @@ padding-bottom: 70px;}
                     }
                 }
             }
-@media(min-width:1440px){
-            .people-btm-left-img:hover .people-btm-left-hover-outside {
-                display: block;
+
+            @media(min-width:1440px) {
+                .people-btm-left-img:hover .people-btm-left-hover-outside {
+                    display: block;
+                }
             }
-        }
         }
 
         .people-btm-right {
@@ -1241,43 +1240,44 @@ padding-bottom: 70px;}
                     display: none;
                 }
             }
-            @media(min-width:1440px){
-            .people-btm-right-img:hover .people-btm-right-hover-outside {
-                display: block;
+
+            @media(min-width:1440px) {
+                .people-btm-right-img:hover .people-btm-right-hover-outside {
+                    display: block;
 
 
-                .circle1 {
-                    width: 20px;
-                    height: 20px;
-                    border-radius: 20px;
-                    background-color: #E29B5E;
-                    position: absolute;
-                    left: 0;
+                    .circle1 {
+                        width: 20px;
+                        height: 20px;
+                        border-radius: 20px;
+                        background-color: #E29B5E;
+                        position: absolute;
+                        left: 0;
+                    }
+
+                    .circle2 {
+                        width: 45px;
+                        height: 45px;
+                        border-radius: 45px;
+                        background-color: #E29B5E;
+                        position: absolute;
+                        left: 25px;
+                        top: 25px;
+                    }
+
+                    h6 {
+                        padding: 5px 5px;
+                        position: absolute;
+                        top: 75px;
+                        right: 0;
+                        border-radius: 10px;
+                        color: white;
+                        background-color: #E29B5E;
+                    }
                 }
 
-                .circle2 {
-                    width: 45px;
-                    height: 45px;
-                    border-radius: 45px;
-                    background-color: #E29B5E;
-                    position: absolute;
-                    left: 25px;
-                    top: 25px;
-                }
 
-                h6 {
-                    padding: 5px 5px;
-                    position: absolute;
-                    top: 75px;
-                    right: 0;
-                    border-radius: 10px;
-                    color: white;
-                    background-color: #E29B5E;
-                }
             }
-
-
-        }
         }
     }
 }
@@ -1287,13 +1287,18 @@ padding-bottom: 70px;}
 // section#dog-leader
 section#dog-leader {
     background-color: orange;
-    .dog-img-order{
+
+    .dog-img-order {
         order: 2;
-        @media(max-width: 991px){ order: 0;}
-       
+
+        @media(max-width: 991px) {
+            order: 0;
+        }
+
     }
+
     .dog-leader-left {
-        background-color: rgb(43, 201, 43) ;
+        background-color: rgb(43, 201, 43);
     }
 
     .paw {
