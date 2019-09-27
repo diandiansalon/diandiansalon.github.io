@@ -1,5 +1,6 @@
 // 引用
 @import url(https://fonts.googleapis.com/css?family=Pacifico);
+
 //Add variables here:
 
 
@@ -9,38 +10,48 @@
 //     height: 100%;
 // }
 .container {
-    width: 85%;
-    // max-width: 1440px !important;
+    width: 75%;
+    max-width: 1440px !important;
 }
 
 h1 {
     font-size: 62px;
     letter-spacing: 14px;
+    font-family: ‘cwTeXMing’, serif;
+    font-weight: 1000;
 }
 
 h2 {
     font-size: 42px;
     letter-spacing: 8.5px;
+    font-family: 'Noto Serif TC', serif;
+    font-weight: 900;
 }
 
 h3 {
     font-size: 30px;
     letter-spacing: 3px;
+    font-family: 'Noto Sans TC', sans-serif;
 }
 
 h4 {
     font-size: 25px;
     letter-spacing: 5px;
+    font-family: 'Noto Sans TC', sans-serif;
 }
 
 h5 {
     font-size: 17px;
-    letter-spacing: 6px;
+    letter-spacing: -1px;
+    // 原本 6px
+    line-height: 28px;
+    font-family: 'Noto Sans TC', sans-serif;
 }
 
 h6 {
     font-size: 15px;
     letter-spacing: 3.5px;
+    font-family: 'Noto Sans TC', sans-serif;
 }
 
 
@@ -94,7 +105,7 @@ section#banner {
     .img1 {
         height: 100%;
         width: 100%;
-        background-image: url("./banner/Banner-01-Tsu.png");
+        background-image: url("./01-banner/01-banner-bothdogsleep.png");
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
@@ -103,7 +114,7 @@ section#banner {
     .img2 {
         height: 100%;
         width: 100%;
-        background-image: url("./banner/Banner-02-Tsu.png");
+        background-image: url("./01-banner/01-banner-momsondog.png");
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
@@ -112,7 +123,7 @@ section#banner {
     .img3 {
         height: 100%;
         width: 100%;
-        background-image: url("./banner/Banner-03-Tsu.png");
+        background-image: url("./01-banner/01-banner-momsondog.png");
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
@@ -231,6 +242,7 @@ section#banner {
         display: -webkit-box;
         display: -ms-flexbox;
         display: -webkit-flex;
+        
     }
 }
 
@@ -244,68 +256,66 @@ section#banner {
 // section#about
 section#about {
     width: 100%;
-
-    @media(max-width:991px) {
-        .title-order {
-            order: 2
-        }
-
-        .pic-order {
-            order: 1;
-            display: flex;
-            justify-content: center;
-        }
-    }
-}
-
-
-
-
-.pic {
-    height: 400px;
-    background-size: cover;
-    background-position: center;
-    margin-top: 118px;
-
-    @media(max-width: 991px) {}
-
-
-}
-
-.title {
-    font-size: 42px;
-    letter-spacing: 8.5px;
-    margin-top: 110px;
-
-    @media(max-width:991px) {
-        margin-top: 0;
-        position: relative;
-    }
-
-
-    h2 {
-        margin-bottom: 70px;
-
         @media(max-width:991px) {
-            position: absolute;
-            top: -470px;
-            left: calc(50% - 101px);
-            text-align: center;
+            .title-order {order: 2
+            }
+            .pic-order{
+                order: 1;
+                display: flex;
+                justify-content: center;
+            }
+        }
+    }
+
+    section#about {
+
+    }  
+    
+
+    .pic {
+        height: 300px;
+        background-size: cover;
+        background-position: center;
+        margin-top: 118px;
+@media(max-width: 991px){
+
+
+}
+           
+    
+    }
+
+    .title {
+        font-size: 42px;
+        letter-spacing: 8.5px;
+        margin-top: 110px;
+        @media(max-width:991px){
+            margin-top:0;
+            position:relative;
         }
 
 
-    }
+        h2 {
+            margin-bottom: 70px;
+            @media(max-width:991px){position: absolute;
+            top:-470px;
+            left: calc(50% - 101px);
+            text-align: center;  
+            }
 
-    h5 {
-        padding-bottom: 70px;
-    }
 
-    .logo {
-        width: 104px;
-        padding-bottom: 130px;
+        }
 
+        h5 {
+            padding-bottom: 70px;
+        }
+
+        .logo {
+            width: 104px;
+            padding-bottom: 130px;
+
+        }
     }
-}
 
 
 
@@ -314,10 +324,17 @@ section#about {
 // about-2
 section#about-2 {
     .about-2-img {
-        padding: 210px 0 50px 175px;
-        background-color: blue;
+        padding: 210px 0 50px 175px;        
+        background-image: url(./03-about-transition/03-about-ransition.png);
+        background-size: cover;
+        background-position: center;
+        display: flex;
+        justify-content: left;
     }
-
+    h4{
+        color: white;
+    }
+   
 }
 
 
@@ -350,7 +367,7 @@ section#unfamiliar {
         div.img {
             width: 100%;
             height: 100%;
-            background-image: url('https://lh3.googleusercontent.com/ngCIdh5L9dVAjhnlhQvJeGs5zjPDCdoiDVVjMc3M67SX77wlBQI_M8DPjolFf8rv8EncMZ2Inw=w600-h0');
+            background-image: url('./04-unfamiliarbar/04-unfamiliarbar-space.png');
             background-size: cover;
             overflow: hidden;
             background-position: center;
@@ -406,7 +423,7 @@ section#booking {
             }
 
             .cup {
-                width: 340px;
+                max-width: 340px;
                 margin: auto;
                 display: flex;
                 justify-content: space-around;
@@ -466,71 +483,265 @@ section#menu {
                 justify-content: space-around;
                 margin: 70px 0 15px 0;
 
-                .menu-top-img {
+                //img1:pasta
+                .menu-top-img.menu-top-img1{
                     width: 250px;
                     height: 250px;
                     background-color: brown;
-                    border-radius: 15px;
+                    border-radius: 10.5px;
+                    background-image: url(./06-menu/06-menu-dogcookie.png);
+                    background-size: cover;
 
                     .mask {
                         width: 100%;
                         height: 100%;
-                        border-radius: 15px;
-                        background-color: aqua;
-                        opacity: 1;
-                        display: none;
-
+                        border-radius: 10.5px;        
+                        background: linear-gradient(to bottom, rgba(255,183,105,0.35) 0%,rgba(128,58,76,0.5) 99%,rgba(128,58,76,0.7) 100%);
+                        visibility: hidden;
+                        .text{
+                            color: rgba($color: #ffffff, $alpha: 0);                       
+                            visibility: hidden;
+                        }                  
                     }
                 }
 
-                .menu-top-img:hover {
-                    transform: scale(1.08);
+                .menu-top-img.menu-top-img1:hover {
+                    transform: scale(1.045);
+                    transition-duration: 0.9s;
+                    transition-timing-function: ease;
+                    
+                    .mask{
+                        visibility: visible;
+                        display:flex;
+                        justify-content: center;
+                        align-items: center;  
+                        transition: 1.2s ease;     
+                        .text{
+                            color: rgba($color: #ffffff, $alpha: 1);  
+                            transition: 0.4s ease;
+                            visibility:  visible;
+                        }         
+                    }
                 }
 
-                .menu-top-img:hover .mask {
-                    display: block;
+              //img2:cake
+                .menu-top-img.menu-top-img2{
+                    width: 250px;
+                    height: 250px;                    
+                    border-radius: 10.5px;
+                    background-image: url(./06-menu/06-menu-cake.png);
+                    background-size: cover;
+
+                    .mask {
+                        width: 100%;
+                        height: 100%;
+                        border-radius: 10.5px;        
+                        background: linear-gradient(to bottom, rgba(255,183,105,0.35) 0%,rgba(128,58,76,0.5) 99%,rgba(128,58,76,0.7) 100%);
+                        visibility: hidden;
+                        .text{
+                            color: rgba($color: #ffffff, $alpha: 0);                       
+                            visibility: hidden;
+                        }                  
+                    }
+                }
+
+                .menu-top-img.menu-top-img2:hover {
+                    transform: scale(1.045);
+                    transition-duration: 0.9s;
+                    transition-timing-function: ease;
+                    
+                    .mask{
+                        visibility: visible;
+                        display:flex;
+                        justify-content: center;
+                        align-items: center;  
+                        transition: 1.2s ease;     
+                        .text{
+                            color: rgba($color: #ffffff, $alpha: 1);  
+                            transition: 0.4s ease;
+                            visibility:  visible;
+                        }         
+                    }
+                }
+
+                //img3:salmon
+                .menu-top-img.menu-top-img3{
+                    width: 250px;
+                    height: 250px;
+                    background-color: brown;
+                    border-radius: 10.5px;
+                    background-image: url(./06-menu/06-menu-salmon.png);
+                    background-size: cover;
+
+                    .mask {
+                        width: 100%;
+                        height: 100%;
+                        border-radius: 10.5px;        
+                        background: linear-gradient(to bottom, rgba(255,183,105,0.35) 0%,rgba(128,58,76,0.5) 99%,rgba(128,58,76,0.7) 100%);
+                        visibility: hidden;
+                        .text{
+                            color: rgba($color: #ffffff, $alpha: 0);                       
+                            visibility: hidden;
+                        }                  
+                    }
+                }
+
+                .menu-top-img.menu-top-img3:hover {
+                    transform: scale(1.045);
+                    transition-duration: 0.9s;
+                    transition-timing-function: ease;
+                    
+                    .mask{
+                        visibility: visible;
+                        display:flex;
+                        justify-content: center;
+                        align-items: center;  
+                        transition: 1.2s ease;     
+                        .text{
+                            color: rgba($color: #ffffff, $alpha: 1);  
+                            transition: 0.4s ease;
+                            visibility:  visible;
+                        }         
+                    }
                 }
             }
+
 
 
 
             .menu-btm {
                 display: flex;
                 justify-content: space-around;
-                margin-bottom: 70px;
+                margin: 70px 0 15px 0;
 
-                .menu-btm-img {
+                //img1:pizza
+                .menu-btm-img.menu-btm-img1{
                     width: 250px;
-                    height: 250px;
-                    background-color: brown;
-                    border-radius: 15px;
+                    height: 250px;                    
+                    border-radius: 10.5px;
+                    background-image: url(./06-menu/06-menu-pizza.png);
+                    background-size: cover;
 
                     .mask {
                         width: 100%;
                         height: 100%;
-                        border-radius: 15px;
-                        background-color: aqua;
-                        opacity: 1;
-                        display: none;
-
+                        border-radius: 10.5px;        
+                        background: linear-gradient(to bottom, rgba(255,183,105,0.35) 0%,rgba(128,58,76,0.5) 99%,rgba(128,58,76,0.7) 100%);
+                        visibility: hidden;
+                        .text{
+                            color: rgba($color: #ffffff, $alpha: 0);                       
+                            visibility: hidden;
+                        }                  
                     }
                 }
 
-                .menu-btm-img:hover {
-                    transform: scale(1.08);
+                .menu-btm-img.menu-btm-img1:hover {
+                    transform: scale(1.045);
+                    transition-duration: 0.9s;
+                    transition-timing-function: ease;
+                    
+                    .mask{
+                        visibility: visible;
+                        display:flex;
+                        justify-content: center;
+                        align-items: center;  
+                        transition: 1.2s ease;     
+                        .text{
+                            color: rgba($color: #ffffff, $alpha: 1);  
+                            transition: 0.4s ease;
+                            visibility:  visible;
+                        }         
+                    }
                 }
 
-                .menu-btm-img:hover .mask {
-                    display: block;
+              //img2:coxktail
+                .menu-btm-img.menu-btm-img2{
+                    width: 250px;
+                    height: 250px;                    
+                    border-radius: 10.5px;
+                    background-image: url(./06-menu/06-menu-cocktail.png);
+                    background-size: cover;
+
+                    .mask {
+                        width: 100%;
+                        height: 100%;
+                        border-radius: 10.5px;        
+                        background: linear-gradient(to bottom, rgba(255,183,105,0.35) 0%,rgba(128,58,76,0.5) 99%,rgba(128,58,76,0.7) 100%);
+                        visibility: hidden;
+                        .text{
+                            color: rgba($color: #ffffff, $alpha: 0);                       
+                            visibility: hidden;
+                        }                  
+                    }
                 }
 
-            }
-        }
+                .menu-btm-img.menu-btm-img2:hover {
+                    transform: scale(1.045);
+                    transition-duration: 0.9s;
+                    transition-timing-function: ease;
+                    
+                    .mask{
+                        visibility: visible;
+                        display:flex;
+                        justify-content: center;
+                        align-items: center;  
+                        transition: 1.2s ease;     
+                        .text{
+                            color: rgba($color: #ffffff, $alpha: 1);  
+                            transition: 0.4s ease;
+                            visibility:  visible;
+                        }         
+                    }
+                }
+
+                //img3:bbq
+                .menu-btm-img.menu-btm-img3{
+                    width: 250px;
+                    height: 250px;                    
+                    border-radius: 10.5px;
+                    background-image: url(./06-menu/06-menu-bbq.png);
+                    background-size: cover;
+
+                    .mask {
+                        width: 100%;
+                        height: 100%;
+                        border-radius: 10.5px;        
+                        background: linear-gradient(to bottom, rgba(255,183,105,0.35) 0%,rgba(128,58,76,0.5) 99%,rgba(128,58,76,0.7) 100%);
+                        visibility: hidden;
+                        .text{
+                            color: rgba($color: #ffffff, $alpha: 0);                       
+                            visibility: hidden;
+                        }                  
+                    }
+                }
+
+                .menu-btm-img.menu-btm-img3:hover {
+                    transform: scale(1.045);
+                    transition-duration: 0.9s;
+                    transition-timing-function: ease;
+                    
+                    .mask{
+                        visibility: visible;
+                        display:flex;
+                        justify-content: center;
+                        align-items: center;  
+                        transition: 1.2s ease;     
+                        .text{
+                            color: rgba($color: #ffffff, $alpha: 1);  
+                            transition: 0.4s ease;
+                            visibility:  visible;
+                        }         
+                    }
+                }
+            } 
+    }
 
 
         .menu-swiper {
-            height: 515px;
+            height: 60vh;
             width: 100%;
+            display: flex;
+            justify-content: center;
 
             @media(min-width:992px) {
                 display: none;
@@ -549,10 +760,243 @@ section#menu {
 
             .swiper-slide {
                 background: #fff;
+                width: 100%;
+                height: 100%;
                 /* Center slide text vertically */
                 display: -webkit-box;
                 display: -ms-flexbox;
                 display: -webkit-flex;
+                .img1{
+                    width:100vw;
+                    .menu-top-img.menu-top-img1{
+                        width: 100%;
+                        height: 100%;                    
+                        background-image: url(./06-menu/06-menu-dogcookie.png);
+                        background-size: cover;
+    
+                        .mask {
+                            width: 100%;
+                            height: 100%;                              
+                            background: linear-gradient(to bottom, rgba(255,183,105,0.35) 0%,rgba(128,58,76,0.5) 99%,rgba(128,58,76,0.7) 100%);
+                            visibility: hidden;
+                            .text{
+                                color: rgba($color: #ffffff, $alpha: 0);                       
+                                visibility: hidden;
+                            }                  
+                        }
+                    }
+    
+                    .menu-top-img.menu-top-img1:hover {
+                        transition-duration: 0.9s;
+                        transition-timing-function: ease;
+                        
+                        .mask{
+                            visibility: visible;
+                            display:flex;
+                            justify-content: center;
+                            align-items: center;  
+                            transition: 1.2s ease;     
+                            .text{
+                                color: rgba($color: #ffffff, $alpha: 1);  
+                                transition: 0.4s ease;
+                                visibility:  visible;
+                            }         
+                        }
+                    }
+                }
+                .img2{
+                    width:100vw;
+                    .menu-top-img.menu-top-img2{
+                        width: 100%;
+                        height: 100%;                    
+                        background-image: url(./06-menu/06-menu-cake.png);
+                        background-size: cover;
+    
+                        .mask {
+                            width: 100%;
+                            height: 100%;                              
+                            background: linear-gradient(to bottom, rgba(255,183,105,0.35) 0%,rgba(128,58,76,0.5) 99%,rgba(128,58,76,0.7) 100%);
+                            visibility: hidden;
+                            .text{
+                                color: rgba($color: #ffffff, $alpha: 0);                       
+                                visibility: hidden;
+                            }                  
+                        }
+                    }
+    
+                    .menu-top-img.menu-top-img2:hover {
+                        transition-duration: 0.9s;
+                        transition-timing-function: ease;
+                        
+                        .mask{
+                            visibility: visible;
+                            display:flex;
+                            justify-content: center;
+                            align-items: center;  
+                            transition: 1.2s ease;     
+                            .text{
+                                color: rgba($color: #ffffff, $alpha: 1);  
+                                transition: 0.4s ease;
+                                visibility:  visible;
+                            }         
+                        }
+                    }
+                }
+                .img3{
+                    width:100vw;
+                    .menu-top-img.menu-top-img3{
+                        width: 100%;
+                        height: 100%;                    
+                        background-image: url(./06-menu/06-menu-salmon.png);
+                        background-size: cover;
+    
+                        .mask {
+                            width: 100%;
+                            height: 100%;                              
+                            background: linear-gradient(to bottom, rgba(255,183,105,0.35) 0%,rgba(128,58,76,0.5) 99%,rgba(128,58,76,0.7) 100%);
+                            visibility: hidden;
+                            .text{
+                                color: rgba($color: #ffffff, $alpha: 0);                       
+                                visibility: hidden;
+                            }                  
+                        }
+                    }
+    
+                    .menu-top-img.menu-top-img3:hover {
+                        transition-duration: 0.9s;
+                        transition-timing-function: ease;
+                        
+                        .mask{
+                            visibility: visible;
+                            display:flex;
+                            justify-content: center;
+                            align-items: center;  
+                            transition: 1.2s ease;     
+                            .text{
+                                color: rgba($color: #ffffff, $alpha: 1);  
+                                transition: 0.4s ease;
+                                visibility:  visible;
+                            }         
+                        }
+                    }
+                }
+
+
+                .img1{
+                    width:100vw;
+                    .menu-btm-img.menu-btm-img1{
+                        width: 100%;
+                        height: 100%;                    
+                        background-image: url(./06-menu/06-menu-pizza.png);
+                        background-size: cover;
+    
+                        .mask {
+                            width: 100%;
+                            height: 100%;                              
+                            background: linear-gradient(to bottom, rgba(255,183,105,0.35) 0%,rgba(128,58,76,0.5) 99%,rgba(128,58,76,0.7) 100%);
+                            visibility: hidden;
+                            .text{
+                                color: rgba($color: #ffffff, $alpha: 0);                       
+                                visibility: hidden;
+                            }                  
+                        }
+                    }
+    
+                    .menu-btm-img.menu-btm-img1:hover {
+                        transition-duration: 0.9s;
+                        transition-timing-function: ease;
+                        
+                        .mask{
+                            visibility: visible;
+                            display:flex;
+                            justify-content: center;
+                            align-items: center;  
+                            transition: 1.2s ease;     
+                            .text{
+                                color: rgba($color: #ffffff, $alpha: 1);  
+                                transition: 0.4s ease;
+                                visibility:  visible;
+                            }         
+                        }
+                    }
+                }
+                .img2{
+                    width:100vw;
+                    .menu-btm-img.menu-btm-img2{
+                        width: 100%;
+                        height: 100%;                    
+                        background-image: url(./06-menu/06-menu-cocktail.png);
+                        background-size: cover;
+    
+                        .mask {
+                            width: 100%;
+                            height: 100%;                              
+                            background: linear-gradient(to bottom, rgba(255,183,105,0.35) 0%,rgba(128,58,76,0.5) 99%,rgba(128,58,76,0.7) 100%);
+                            visibility: hidden;
+                            .text{
+                                color: rgba($color: #ffffff, $alpha: 0);                       
+                                visibility: hidden;
+                            }                  
+                        }
+                    }
+    
+                    .menu-btm-img.menu-btm-img2:hover {
+                        transition-duration: 0.9s;
+                        transition-timing-function: ease;
+                        
+                        .mask{
+                            visibility: visible;
+                            display:flex;
+                            justify-content: center;
+                            align-items: center;  
+                            transition: 1.2s ease;     
+                            .text{
+                                color: rgba($color: #ffffff, $alpha: 1);  
+                                transition: 0.4s ease;
+                                visibility:  visible;
+                            }         
+                        }
+                    }
+                }
+                .img3{
+                    width:100vw;
+                    .menu-btm-img.menu-btm-img3{
+                        width: 100%;
+                        height: 100%;                    
+                        background-image: url(./06-menu/06-menu-bbq.png);
+                        background-size: cover;
+    
+                        .mask {
+                            width: 100%;
+                            height: 100%;                              
+                            background: linear-gradient(to bottom, rgba(255,183,105,0.35) 0%,rgba(128,58,76,0.5) 99%,rgba(128,58,76,0.7) 100%);
+                            visibility: hidden;
+                            .text{
+                                color: rgba($color: #ffffff, $alpha: 0);                       
+                                visibility: hidden;
+                            }                  
+                        }
+                    }
+    
+                    .menu-btm-img.menu-btm-img3:hover {
+                        transition-duration: 0.9s;
+                        transition-timing-function: ease;
+                        
+                        .mask{
+                            visibility: visible;
+                            display:flex;
+                            justify-content: center;
+                            align-items: center;  
+                            transition: 1.2s ease;     
+                            .text{
+                                color: rgba($color: #ffffff, $alpha: 1);  
+                                transition: 0.4s ease;
+                                visibility:  visible;
+                            }         
+                        }
+                    }
+                }
+                
             }
         }
     }
@@ -564,7 +1008,7 @@ section#menu {
 // service
 
 section#service {
-  
+
 
     h2 {
         text-align: center;
@@ -575,7 +1019,8 @@ section#service {
     h3 {
         text-align: center;
         margin: 20px 0;
-color:#F4B9AB;  
+        color: #F4B9AB;
+
         @media(max-width:991px) {
             margin-top: 78px;
         }
@@ -607,7 +1052,7 @@ color:#F4B9AB;
 
 
     .service-btm-left {
-       
+
         padding: 100px 0 50px 0;
 
         @media (max-width:991px) {
@@ -800,34 +1245,118 @@ color:#F4B9AB;
 
 
 // service02
-section#service-2{
-height: 640px;
-background-color: blue;
-.container{
-    height: 100%;
-    display: flex;
-    
-.service-2-left{
-    width: 15%;
-    height: 100%;
-    background-color: red;
+section#service-2 {
+    padding: 10px 0;
+
+
+    .container {
+        height: 100%;
+        widows: 100%;
+        display: flex;
+        justify-content: space-around;
+
+        h4 {
+            color: #F4B9AB
+        }
+
+        .service-2-left {
+            display: none;
+            @media(min-width:992px){
+            width: 10%;
+            writing-mode: vertical-lr;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 5px solid #F4B9AB;
+        }
+
+
+        }
+
+        .service-2-right {
+            display: none;
+            @media(min-width:992px){
+            width: 10%;
+            writing-mode: vertical-lr;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 5px solid #F4B9AB;
+            }
+        }
+
+        .service-2-center {
+            width: 65%;
+            height: 100%;
+            margin: 0 10px;
+            @media(min-width:992px){
+                width: 100%;
+            }
+
+            .service-2-center-top {
+                width: 100%;
+                height: 100%;
+
+                margin-bottom: 5px;
+                display: flex;
+                justify-content: space-between;
+            }
+
+            .service-2-center-btm {
+                width: 100%;
+                margin-top: 5px;
+                display: flex;
+                justify-content: space-between;
+            }
+
+            .service-2-center-img {
+                width: calc(50% - 2.5px);
+                height: 100%;
+                position: relative;
+                .img {
+                    width: 100%
+                }
+            }
+.text{
+    position: absolute;
+    z-index: 1;
+    top: calc(50% - 27px);
+    left:calc(50% - 81px);
+    margin-top: auto;
+    color:#fff0;
+    transition: 0.8s;
+
+
+    h5{text-align: center;
+        padding-top: 30px;
+      }
+   
 }
-.service-2-right{
-    width: 15%;
-    height: 100%;
-    background-color: red;
+.service-2-center-img:hover .text{
+    color:#ffff;
 }
-.service-2-center{
-    width: 65%;
-    height: 100%;
-    background-color: green;
-}
+            .service-2-center-img-hover{
+                width: 100%;
+                height: 100%;
+                transition: 0.8s;
+                background-color: rgba(244, 186, 171, 0);
+                position: absolute;
+                top:0;
+            }
+
+
+                .service-2-center-img-hover:hover {
+                    background-color: rgba(244, 186, 171, 0.8);
+                }
+
+            
+        }
 
 
 
 
 
-}
+    }
 }
 
 
@@ -852,7 +1381,7 @@ background-color: blue;
 
 //product
 section#product {
-    background-color: rgb(206, 228, 108);
+  
 
     .container {
 
@@ -863,7 +1392,6 @@ section#product {
         }
 
         .product-mdl {
-            background-color: darkgoldenrod;
             margin-bottom: 50px;
 
             h5 {
@@ -877,7 +1405,6 @@ section#product {
             .product-mdl-img {
                 width: 90px;
                 height: 90px;
-                background-color: rgb(214, 44, 44);
                 border-radius: 90px;
                 margin: auto;
                 position: relative;
@@ -929,7 +1456,7 @@ section#product {
 
         .product-btm {
             width: 100%;
-            height: 495px;
+            height: 400px;
             background-color: black;
             position: relative;
 
@@ -948,7 +1475,7 @@ section#product {
 
             .swiper-container {
                 width: 100%;
-                height: 100%;
+                height: 400px;
             }
 
             .swiper-slide {
@@ -1111,7 +1638,6 @@ section#golden-ratio {
 
 //section#people
 section#people {
-    background-color: coral;
     padding: 48px 0 125px 0;
 
     h2 {
@@ -1144,7 +1670,6 @@ section#people {
             display: flex;
             flex-direction: column;
             align-items: center;
-            background-color: rgb(128, 128, 216);
             position: relative;
 
 
@@ -1215,7 +1740,6 @@ section#people {
             display: flex;
             flex-direction: column;
             align-items: center;
-            background-color: rgb(128, 128, 216);
             position: relative;
 
 
@@ -1297,10 +1821,7 @@ section#dog-leader {
 
     }
 
-    .dog-leader-left {
-        background-color: rgb(43, 201, 43);
-    }
-
+  
     .paw {
         padding-top: 70px;
         display: flex;
@@ -1335,7 +1856,6 @@ section#dog-leader {
         background-size: cover;
         background-position: center;
         background-image: url("/12-leaderwhite/dog.jpg");
-        background-color: orange;
 
         .hi {
             padding-top: 6%;
@@ -1365,7 +1885,7 @@ section#connect {
         .connect-top {
             padding: 120px 0 100px 0;
             // 標題上間距120px  標題下間距100px
-            background-color: crimson;
+           
             display: flex;
             align-items: flex-end;
             justify-content: center;
@@ -1385,13 +1905,13 @@ section#connect {
         }
 
         .connect-btm-right {
-            background-color: rgb(173, 13, 53);
+           
 
 
             .connect-btm-right-top {
                 display: flex;
                 justify-content: space-between;
-                background-color: chartreuse;
+           
 
                 @media(max-width:991px) {
                     flex-direction: column;
@@ -1412,7 +1932,6 @@ section#connect {
 
             .connect-btm-right-btm {
                 padding-top: 180px;
-                background-color: chocolate;
 
                 @media(max-width:991px) {
                     padding-top: 0;
@@ -1471,7 +1990,7 @@ footer {
         display: flex;
         flex-direction: column;
         align-items: flex-end;
-        background-color: rgb(42, 59, 24);
+       
 
         h3 {
             color: white;
@@ -1508,7 +2027,6 @@ footer {
     }
 
     .icon {
-        background-color: black;
         display: flex;
         justify-content: flex-end;
         max-width: 80%;
@@ -1524,7 +2042,7 @@ footer {
 
 
     .content {
-        background-color: black;
+        
         width: 90%;
 
 
@@ -1541,25 +2059,3 @@ footer {
 
 
 
-
-// other extra class
-.b-p-center {
-    background-position: center;
-}
-
-.b-s-cover {
-    background-size: cover;
-}
-
-.mr-top-30 {
-    margin-top: 30px;
-}
-
-.bb {
-    width: 100%;
-    height: 100vh;
-    background-color: black;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
