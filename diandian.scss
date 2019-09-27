@@ -564,7 +564,7 @@ section#menu {
 // service
 
 section#service {
-
+  
 
     h2 {
         text-align: center;
@@ -575,8 +575,7 @@ section#service {
     h3 {
         text-align: center;
         margin: 20px 0;
-        color: #F4B9AB;
-
+color:#F4B9AB;  
         @media(max-width:991px) {
             margin-top: 78px;
         }
@@ -608,7 +607,7 @@ section#service {
 
 
     .service-btm-left {
-
+       
         padding: 100px 0 50px 0;
 
         @media (max-width:991px) {
@@ -801,118 +800,34 @@ section#service {
 
 
 // service02
-section#service-2 {
-    padding: 10px 0;
-
-
-    .container {
-        height: 100%;
-        widows: 100%;
-        display: flex;
-        justify-content: space-around;
-
-        h4 {
-            color: #F4B9AB
-        }
-
-        .service-2-left {
-            display: none;
-            @media(min-width:992px){
-            width: 10%;
-            writing-mode: vertical-lr;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            border: 5px solid #F4B9AB;
-        }
-
-
-        }
-
-        .service-2-right {
-            display: none;
-            @media(min-width:992px){
-            width: 10%;
-            writing-mode: vertical-lr;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            border: 5px solid #F4B9AB;
-            }
-        }
-
-        .service-2-center {
-            width: 65%;
-            height: 100%;
-            margin: 0 10px;
-            @media(min-width:992px){
-                width: 100%;
-            }
-
-            .service-2-center-top {
-                width: 100%;
-                height: 100%;
-
-                margin-bottom: 5px;
-                display: flex;
-                justify-content: space-between;
-            }
-
-            .service-2-center-btm {
-                width: 100%;
-                margin-top: 5px;
-                display: flex;
-                justify-content: space-between;
-            }
-
-            .service-2-center-img {
-                width: calc(50% - 2.5px);
-                height: 100%;
-                position: relative;
-                .img {
-                    width: 100%
-                }
-            }
-.text{
-    position: absolute;
-    z-index: 1;
-    top: calc(50% - 27px);
-    left:calc(50% - 81px);
-    margin-top: auto;
-    color: white;
-    display: none;
-
-    h5{text-align: center;
-        transition: 2s;
-        padding-top: 30px;
-      }
-   
+section#service-2{
+height: 640px;
+background-color: blue;
+.container{
+    height: 100%;
+    display: flex;
+    
+.service-2-left{
+    width: 15%;
+    height: 100%;
+    background-color: red;
 }
-.service-2-center-img:hover .text{
-    display: block;
+.service-2-right{
+    width: 15%;
+    height: 100%;
+    background-color: red;
 }
-            .service-2-center-img-hover{
-                width: 100%;
-                height: 100%;
-                transition: 0.8s;
-                background-color: rgba(244, 186, 171, 0);
-                position: absolute;
-                top:0;
-            }
-
-
-                .service-2-center-img-hover:hover {
-                    background-color: rgba(244, 186, 171, 0.8);
-                }
-
-            
-        }
+.service-2-center{
+    width: 65%;
+    height: 100%;
+    background-color: green;
+}
 
 
 
 
 
-    }
+}
 }
 
 
@@ -962,6 +877,7 @@ section#product {
             .product-mdl-img {
                 width: 90px;
                 height: 90px;
+                background-color: rgb(214, 44, 44);
                 border-radius: 90px;
                 margin: auto;
                 position: relative;
@@ -1013,7 +929,7 @@ section#product {
 
         .product-btm {
             width: 100%;
-            height: 400px;
+            height: 495px;
             background-color: black;
             position: relative;
 
@@ -1032,7 +948,7 @@ section#product {
 
             .swiper-container {
                 width: 100%;
-                height: 400px;
+                height: 100%;
             }
 
             .swiper-slide {

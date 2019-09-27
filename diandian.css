@@ -738,147 +738,33 @@ section#service .service-btm-center .swiper-slide {
 }
 
 section#service-2 {
-  padding: 10px 0;
+  height: 640px;
+  background-color: blue;
 }
 
 section#service-2 .container {
   height: 100%;
-  widows: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-}
-
-section#service-2 .container h4 {
-  color: #F4B9AB;
 }
 
 section#service-2 .container .service-2-left {
-  display: none;
-}
-
-@media (min-width: 992px) {
-  section#service-2 .container .service-2-left {
-    width: 10%;
-    -webkit-writing-mode: vertical-lr;
-        -ms-writing-mode: tb-lr;
-            writing-mode: vertical-lr;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    border: 5px solid #F4B9AB;
-  }
+  width: 15%;
+  height: 100%;
+  background-color: red;
 }
 
 section#service-2 .container .service-2-right {
-  display: none;
-}
-
-@media (min-width: 992px) {
-  section#service-2 .container .service-2-right {
-    width: 10%;
-    -webkit-writing-mode: vertical-lr;
-        -ms-writing-mode: tb-lr;
-            writing-mode: vertical-lr;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    border: 5px solid #F4B9AB;
-  }
+  width: 15%;
+  height: 100%;
+  background-color: red;
 }
 
 section#service-2 .container .service-2-center {
   width: 65%;
   height: 100%;
-  margin: 0 10px;
-}
-
-@media (min-width: 992px) {
-  section#service-2 .container .service-2-center {
-    width: 100%;
-  }
-}
-
-section#service-2 .container .service-2-center .service-2-center-top {
-  width: 100%;
-  height: 100%;
-  margin-bottom: 5px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
-section#service-2 .container .service-2-center .service-2-center-btm {
-  width: 100%;
-  margin-top: 5px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
-section#service-2 .container .service-2-center .service-2-center-img {
-  width: calc(50% - 2.5px);
-  height: 100%;
-  position: relative;
-}
-
-section#service-2 .container .service-2-center .service-2-center-img .img {
-  width: 100%;
-}
-
-section#service-2 .container .service-2-center .text {
-  position: absolute;
-  z-index: 1;
-  top: calc(50% - 27px);
-  left: calc(50% - 81px);
-  margin-top: auto;
-  color: white;
-  display: none;
-}
-
-section#service-2 .container .service-2-center .text h5 {
-  text-align: center;
-  -webkit-transition: 2s;
-  transition: 2s;
-  padding-top: 30px;
-}
-
-section#service-2 .container .service-2-center .service-2-center-img:hover .text {
-  display: block;
-}
-
-section#service-2 .container .service-2-center .service-2-center-img-hover {
-  width: 100%;
-  height: 100%;
-  -webkit-transition: 0.8s;
-  transition: 0.8s;
-  background-color: rgba(244, 186, 171, 0);
-  position: absolute;
-  top: 0;
-}
-
-section#service-2 .container .service-2-center .service-2-center-img-hover:hover {
-  background-color: rgba(244, 186, 171, 0.8);
+  background-color: green;
 }
 
 section#product {
@@ -907,6 +793,7 @@ section#product .container .product-mdl h5 {
 section#product .container .product-mdl .product-mdl-img {
   width: 90px;
   height: 90px;
+  background-color: #d62c2c;
   border-radius: 90px;
   margin: auto;
   position: relative;
@@ -955,7 +842,7 @@ section#product .container .product-mdl .product-mdl-img6 {
 
 section#product .container .product-btm {
   width: 100%;
-  height: 400px;
+  height: 495px;
   background-color: black;
   position: relative;
 }
@@ -979,7 +866,7 @@ section#product .container .product-btm h6 {
 
 section#product .container .product-btm .swiper-container {
   width: 100%;
-  height: 400px;
+  height: 100%;
 }
 
 section#product .container .product-btm .swiper-slide {
