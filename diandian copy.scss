@@ -937,7 +937,7 @@ section#service-2 {
 
 //product
 section#product {
-    background-color: rgb(206, 228, 108);
+  
 
     .container {
 
@@ -948,7 +948,6 @@ section#product {
         }
 
         .product-mdl {
-            background-color: darkgoldenrod;
             margin-bottom: 50px;
 
             h5 {
@@ -1195,7 +1194,6 @@ section#golden-ratio {
 
 //section#people
 section#people {
-    background-color: coral;
     padding: 48px 0 125px 0;
 
     h2 {
@@ -1228,7 +1226,6 @@ section#people {
             display: flex;
             flex-direction: column;
             align-items: center;
-            background-color: rgb(128, 128, 216);
             position: relative;
 
 
@@ -1299,7 +1296,6 @@ section#people {
             display: flex;
             flex-direction: column;
             align-items: center;
-            background-color: rgb(128, 128, 216);
             position: relative;
 
 
@@ -1381,10 +1377,7 @@ section#dog-leader {
 
     }
 
-    .dog-leader-left {
-        background-color: rgb(43, 201, 43);
-    }
-
+  
     .paw {
         padding-top: 70px;
         display: flex;
@@ -1419,7 +1412,6 @@ section#dog-leader {
         background-size: cover;
         background-position: center;
         background-image: url("/12-leaderwhite/dog.jpg");
-        background-color: orange;
 
         .hi {
             padding-top: 6%;
@@ -1449,7 +1441,7 @@ section#connect {
         .connect-top {
             padding: 120px 0 100px 0;
             // 標題上間距120px  標題下間距100px
-            background-color: crimson;
+           
             display: flex;
             align-items: flex-end;
             justify-content: center;
@@ -1469,13 +1461,13 @@ section#connect {
         }
 
         .connect-btm-right {
-            background-color: rgb(173, 13, 53);
+           
 
 
             .connect-btm-right-top {
                 display: flex;
                 justify-content: space-between;
-                background-color: chartreuse;
+           
 
                 @media(max-width:991px) {
                     flex-direction: column;
@@ -1496,7 +1488,6 @@ section#connect {
 
             .connect-btm-right-btm {
                 padding-top: 180px;
-                background-color: chocolate;
 
                 @media(max-width:991px) {
                     padding-top: 0;
@@ -1555,7 +1546,7 @@ footer {
         display: flex;
         flex-direction: column;
         align-items: flex-end;
-        background-color: rgb(42, 59, 24);
+       
 
         h3 {
             color: white;
@@ -1592,7 +1583,6 @@ footer {
     }
 
     .icon {
-        background-color: black;
         display: flex;
         justify-content: flex-end;
         max-width: 80%;
@@ -1608,7 +1598,7 @@ footer {
 
 
     .content {
-        background-color: black;
+        
         width: 90%;
 
 
@@ -1625,25 +1615,3 @@ footer {
 
 
 
-
-// other extra class
-.b-p-center {
-    background-position: center;
-}
-
-.b-s-cover {
-    background-size: cover;
-}
-
-.mr-top-30 {
-    margin-top: 30px;
-}
-
-.bb {
-    width: 100%;
-    height: 100vh;
-    background-color: black;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}

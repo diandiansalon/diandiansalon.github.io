@@ -881,10 +881,6 @@ section#service-2 .container .service-2-center .service-2-center-img-hover:hover
   background-color: rgba(244, 186, 171, 0.8);
 }
 
-section#product {
-  background-color: #cee46c;
-}
-
 section#product .container h2 {
   padding: 123px 0 38px 0;
   text-align: center;
@@ -892,7 +888,6 @@ section#product .container h2 {
 }
 
 section#product .container .product-mdl {
-  background-color: darkgoldenrod;
   margin-bottom: 50px;
 }
 
@@ -1128,7 +1123,6 @@ section#golden-ratio .content h5 {
 }
 
 section#people {
-  background-color: coral;
   padding: 48px 0 125px 0;
 }
 
@@ -1168,7 +1162,6 @@ section#people .people-btm .people-btm-left {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: #8080d8;
   position: relative;
 }
 
@@ -1244,7 +1237,6 @@ section#people .people-btm .people-btm-right {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: #8080d8;
   position: relative;
 }
 
@@ -1319,10 +1311,6 @@ section#dog-leader .dog-img-order {
   }
 }
 
-section#dog-leader .dog-leader-left {
-  background-color: #2bc92b;
-}
-
 section#dog-leader .paw {
   padding-top: 70px;
   display: -webkit-box;
@@ -1361,7 +1349,6 @@ section#dog-leader .dog-img {
   background-size: cover;
   background-position: center;
   background-image: url("/12-leaderwhite/dog.jpg");
-  background-color: orange;
 }
 
 section#dog-leader .dog-img .hi {
@@ -1384,7 +1371,6 @@ section#connect .container {
 
 section#connect .container .connect-top {
   padding: 120px 0 100px 0;
-  background-color: crimson;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1407,10 +1393,6 @@ section#connect .container .connect-btm-left {
   background-color: burlywood;
 }
 
-section#connect .container .connect-btm-right {
-  background-color: #ad0d35;
-}
-
 section#connect .container .connect-btm-right .connect-btm-right-top {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1418,7 +1400,6 @@ section#connect .container .connect-btm-right .connect-btm-right-top {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  background-color: chartreuse;
 }
 
 @media (max-width: 991px) {
@@ -1451,7 +1432,6 @@ section#connect .container .connect-btm-right .connect-btm-right-top .logo {
 
 section#connect .container .connect-btm-right .connect-btm-right-btm {
   padding-top: 180px;
-  background-color: chocolate;
 }
 
 @media (max-width: 991px) {
@@ -1526,7 +1506,6 @@ footer {
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
-  background-color: #2a3b18;
 }
 
 .footer-left .content h3 {
@@ -1564,7 +1543,6 @@ footer {
 }
 
 .footer-right .icon {
-  background-color: black;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1581,7 +1559,6 @@ footer {
 }
 
 .footer-right .content {
-  background-color: black;
   width: 90%;
 }
 
@@ -1592,31 +1569,4 @@ footer {
   font-size: 15px;
   letter-spacing: 5px;
 }
-
-.b-p-center {
-  background-position: center;
-}
-
-.b-s-cover {
-  background-size: cover;
-}
-
-.mr-top-30 {
-  margin-top: 30px;
-}
-
-.bb {
-  width: 100%;
-  height: 100vh;
-  background-color: black;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-/*# sourceMappingURL=diandian.css.map */
+/*# sourceMappingURL=diandian copy.css.map */
