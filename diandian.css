@@ -264,7 +264,7 @@ section#about {
 }
 
 .pic {
-  height: 400px;
+  height: 300px;
   background-size: cover;
   background-position: center;
   margin-top: 118px;
@@ -1470,19 +1470,18 @@ section#service-2 .container .service-2-center .text {
   top: calc(50% - 27px);
   left: calc(50% - 81px);
   margin-top: auto;
-  color: white;
-  display: none;
+  color: #fff0;
+  -webkit-transition: 0.8s;
+  transition: 0.8s;
 }
 
 section#service-2 .container .service-2-center .text h5 {
   text-align: center;
-  -webkit-transition: 2s;
-  transition: 2s;
   padding-top: 30px;
 }
 
 section#service-2 .container .service-2-center .service-2-center-img:hover .text {
-  display: block;
+  color: #ffff;
 }
 
 section#service-2 .container .service-2-center .service-2-center-img-hover {
@@ -2187,4 +2186,4 @@ footer {
   font-size: 15px;
   letter-spacing: 5px;
 }
-/*# sourceMappingURL=diandian-tru.css.map */
+/*# sourceMappingURL=diandian.css.map */

@@ -271,7 +271,7 @@ section#about {
     
 
     .pic {
-        height: 400px;
+        height: 300px;
         background-size: cover;
         background-position: center;
         margin-top: 118px;
@@ -1321,17 +1321,17 @@ section#service-2 {
     top: calc(50% - 27px);
     left:calc(50% - 81px);
     margin-top: auto;
-    color: white;
-    display: none;
+    color:#fff0;
+    transition: 0.8s;
+
 
     h5{text-align: center;
-        transition: 2s;
         padding-top: 30px;
       }
    
 }
 .service-2-center-img:hover .text{
-    display: block;
+    color:#ffff;
 }
             .service-2-center-img-hover{
                 width: 100%;
