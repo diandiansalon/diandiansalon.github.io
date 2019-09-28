@@ -58,6 +58,7 @@
 
             <div class="content">
                 <h2>點點 寵物沙龍會館</h2>
+                <h4>點點寵物沙龍會館</h4>
                 <h5>點點讓您 更放心一點 更安心一點</h5>
 
             </div>
@@ -93,7 +94,44 @@
             <div class="hamburger">
                 <i class="fas fa-bars"></i>
             </div>
+            <div class="hamburger_list">
+                 <!-- navbar -->
+            <ul>
+                <li>
+                    <div class="nav-img"></div>
+                    <h6></h6>
+                </li>
+                <li>
+                    <div class="nav-img"></div>
+                    <h6>不熟人</h6>
+                </li>
+                <li>
+                    <div class="nav-img"></div>
+                    <h6>毛寶貝服務</h6>
+                </li>
+                <li>
+                    <div class="nav-img"></div>
+                    <h6>點點產品</h6>
+                </li>
+                <li>
+                    <div class="nav-img"></div>
+                    <h6>點點成員</h6>
+                </li>
+                <li>
+                    <div class="nav-img"></div>
+                    <h6>粉絲團</h6>
+                </li>
+            </ul>
+            </div>
         </div>
+
+        <script>
+            var hamburger = document.querySelector(".hamburger")
+            var hamburger_list = document.querySelector(".hamburger_list")
+            hamburger.onclick = function () {
+                hamburger_list.classList.toggle("active")
+            }
+        </script>
 
         <!-- Swiper -->
         <div class="swiper-container">

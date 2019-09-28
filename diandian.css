@@ -50,35 +50,38 @@ body {
 }
 
 #shopping {
-  position: fixed;
-  right: 35px;
-  top: 150px;
-  z-index: 5;
+  display: none;
 }
 
-#shopping i {
-  font-size: 20px;
-  color: white;
-}
-
-#shopping .cart {
-  width: 31px;
-  height: 200px;
-  -webkit-writing-mode: vertical-lr;
-      -ms-writing-mode: tb-lr;
-          writing-mode: vertical-lr;
-  letter-spacing: 10px;
-  color: white;
-}
-
-#shopping .messenger {
-  width: 50px;
-  height: 100px;
-  -webkit-writing-mode: vertical-lr;
-      -ms-writing-mode: tb-lr;
-          writing-mode: vertical-lr;
-  letter-spacing: 10px;
-  color: white;
+@media (min-width: 576px) {
+  #shopping {
+    position: fixed;
+    right: 35px;
+    top: 150px;
+    z-index: 5;
+  }
+  #shopping i {
+    font-size: 20px;
+    color: white;
+  }
+  #shopping .cart {
+    width: 31px;
+    height: 200px;
+    -webkit-writing-mode: vertical-lr;
+        -ms-writing-mode: tb-lr;
+            writing-mode: vertical-lr;
+    letter-spacing: 10px;
+    color: white;
+  }
+  #shopping .messenger {
+    width: 50px;
+    height: 100px;
+    -webkit-writing-mode: vertical-lr;
+        -ms-writing-mode: tb-lr;
+            writing-mode: vertical-lr;
+    letter-spacing: 10px;
+    color: white;
+  }
 }
 
 section#banner {
@@ -128,6 +131,12 @@ section#banner .container ul {
   list-style-type: none;
 }
 
+@media (max-width: 992px) {
+  section#banner .container ul {
+    display: none;
+  }
+}
+
 section#banner .container ul li {
   margin: 0 14px;
   color: white;
@@ -142,13 +151,19 @@ section#banner .container ul li:hover {
 }
 
 section#banner .container ul li:hover .nav-img {
-  width: 40px;
-  height: 40px;
-  position: absolute;
-  top: -45px;
-  left: calc(50% - 20px);
-  background-image: url("./banner/Banner-button-hover-Tsu.png");
-  background-size: cover;
+  display: none;
+}
+
+@media (min-width: 576px) {
+  section#banner .container ul li:hover .nav-img {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: -45px;
+    left: calc(50% - 20px);
+    background-image: url("./banner/Banner-button-hover-Tsu.png");
+    background-size: cover;
+  }
 }
 
 section#banner .container .logo {
@@ -180,40 +195,56 @@ section#banner .container .content {
   z-index: 3;
 }
 
+@media (max-width: 992px) {
+  section#banner .container .content h2 {
+    display: none;
+  }
+}
+
+@media (min-width: 992px) {
+  section#banner .container .content h3 {
+    display: none;
+  }
+}
+
 section#banner .container .content h5 {
   margin-top: 42px;
 }
 
 section#banner .container .phone {
-  width: 300px;
-  border-radius: 29px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  position: absolute;
-  top: 20px;
-  right: 0;
-  z-index: 2;
-  padding: 5px 0;
-  color: #fff;
-  border: 3px solid white;
+  display: none;
 }
 
-section#banner .container .phone i {
-  margin: 0 8px;
-}
-
-section#banner .container .phone h6 {
-  margin: 0;
+@media (min-width: 576px) {
+  section#banner .container .phone {
+    width: 300px;
+    border-radius: 29px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    position: absolute;
+    top: 20px;
+    right: 0;
+    z-index: 2;
+    padding: 5px 0;
+    color: #fff;
+    border: 3px solid white;
+  }
+  section#banner .container .phone i {
+    margin: 0 8px;
+  }
+  section#banner .container .phone h6 {
+    margin: 0;
+  }
 }
 
 section#banner .container .hamburger {
-  width: 50px;
-  height: 50px;
-  background-color: antiquewhite;
+  width: 30px;
+  height: 40px;
+  color: white;
   z-index: 3;
   position: absolute;
   top: 116px;
@@ -225,6 +256,35 @@ section#banner .container .hamburger {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+@media (min-width: 992px) {
+  section#banner .container .hamburger {
+    display: none;
+  }
+}
+
+@media (max-width: 991px) {
+  section#banner .container .hamburger_list ul {
+    display: block;
+    position: absolute;
+    top: 166px;
+    right: 10px;
+    text-align: right;
+    background-color: lightgrey;
+    padding-bottom: 5px;
+    padding-left: unset;
+  }
+  section#banner .container .hamburger_list ul li {
+    padding: 5px 0;
+  }
+  section#banner .container .hamburger_list ul h6 {
+    margin-bottom: unset;
+  }
+}
+
+section#banner .container .hamburger_list.active {
+  display: block;
 }
 
 section#banner .swiper-container {
