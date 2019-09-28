@@ -202,7 +202,7 @@ section#banner .container .content {
 }
 
 @media (min-width: 992px) {
-  section#banner .container .content h3 {
+  section#banner .container .content h4 {
     display: none;
   }
 }
@@ -262,6 +262,10 @@ section#banner .container .hamburger {
   section#banner .container .hamburger {
     display: none;
   }
+}
+
+section#banner .container .hamburger_list {
+  display: none;
 }
 
 @media (max-width: 991px) {
