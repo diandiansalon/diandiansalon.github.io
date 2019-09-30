@@ -22,8 +22,16 @@
 
     <!-- link to scss -->
     <link rel="stylesheet" href="./diandian.css">
+
     <!-- link to AOS -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- lightbox cdn -->
+    <link rel="stylesheet" href="/js/lightgallery.min.js">
+    <link href="https://cdn.rawgit.com/sachinchoolur/lightgallery.js/master/dist/css/lightgallery.css" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="test.css">
 </head>
 
 
@@ -67,33 +75,45 @@
             <ul>
                 <li>
                     <div class="nav-img"></div>
-                    <a href="#about" style="text-decoration:none;color:white">
-                        <div>
-                            <h6>點點理念</h6>
-                        </div>
+                    <a class="nav_about" href="#about" style="text-decoration:none;color:white">
+                        <!-- <div class="nav_about"> -->
+                        <h6>點點理念</h6>
+                        <!-- </div> -->
                     </a>
 
                 </li>
 
                 <li>
                     <div class="nav-img"></div>
-                    <h6>不熟人</h6>
+                    <a class="nav_unfamiliar" href="#unfamiliar" style="text-decoration:none;color:white">
+                        <!-- <div class="nav_unfamiliar"> -->
+                        <h6>不熟人</h6>
+                        <!-- </div> -->
+                    </a>
                 </li>
                 <li>
                     <div class="nav-img"></div>
-                    <h6>毛寶貝服務</h6>
+                    <a class="nav_service" href="#service" style="text-decoration:none;color:white">
+                        <h6>毛寶貝服務</h6>
+                    </a>
                 </li>
                 <li>
                     <div class="nav-img"></div>
-                    <h6>點點產品</h6>
+                    <a class="nav_product" href="#product" style="text-decoration:none;color:white">
+                        <h6>點點產品</h6>
+                    </a>
                 </li>
                 <li>
                     <div class="nav-img"></div>
-                    <h6>點點成員</h6>
+                    <a class="nav_people" href="#people" style="text-decoration:none;color:white">
+                        <h6>點點成員</h6>
+                    </a>
                 </li>
                 <li>
-                    <div class="nav-img"></div>
-                    <h6>粉絲團</h6>
+                    <a class="nav_connect" href="#connect" style="text-decoration:none;color:white">
+                        <div class="nav-img"></div>
+                        <h6>聯絡我們</h6>
+                    </a>
                 </li>
             </ul>
             <div class="hamburger">
@@ -109,27 +129,28 @@
                                 <h6>點點理念</h6>
                             </div>
                         </a>
-                        <!-- <h6>點點理念</h6> -->
                     </li>
                     <li>
                         <div class="nav-img"></div>
-                        <h6>不熟人</h6>
+                        <a href="#unfamiliar">
+                            <h6>不熟人</h6>
+                        </a>
                     </li>
                     <li>
                         <div class="nav-img"></div>
-                        <h6>毛寶貝服務</h6>
+                        <a href="#service"><h6>毛寶貝服務</h6></a>
                     </li>
                     <li>
                         <div class="nav-img"></div>
-                        <h6>點點產品</h6>
+                        <a href="#product"><h6>點點產品</h6></a>
                     </li>
                     <li>
                         <div class="nav-img"></div>
-                        <h6>點點成員</h6>
+                        <a href="#people"> <h6>點點成員</h6></a>
                     </li>
                     <li>
                         <div class="nav-img"></div>
-                        <h6>粉絲團</h6>
+                        <a href="#connect"><h6>聯絡我們</h6></a>
                     </li>
                 </ul>
             </div>
@@ -157,7 +178,7 @@
                 </div>
 
             </div>
-            <!-- Add Pagination -->
+            Add Pagination
             <div class="swiper-pagination"></div>
             <!-- Add Arrows -->
             <!-- <div class="swiper-button-next"></div>
@@ -300,14 +321,18 @@
     <section id="menu">
         <div class="container">
             <div class="menu-all">
+
                 <div class="menu-top">
                     <div class="menu-top-img menu-top-img1">
                         <div class="mask">
                             <div class="text">
-                                <h4>毛孩零嘴</h4>
+                                <h4 text-decoration:none>毛孩零嘴</h4>
                             </div>
                         </div>
                     </div>
+
+
+
                     <div class="menu-top-img menu-top-img2">
                         <div class="mask">
                             <div class="text">
@@ -315,6 +340,10 @@
                             </div>
                         </div>
                     </div>
+
+
+
+
                     <div class="menu-top-img menu-top-img3">
                         <div class="mask">
                             <div class="text">
@@ -323,6 +352,8 @@
                         </div>
                     </div>
                 </div>
+
+
 
 
 
@@ -627,6 +658,8 @@
 
 
             <!-- row>=768px  -->
+
+           
             <div class="row product-row-large">
                 <div class="col-6 col-md-2">
                     <div class="product-mdl">
@@ -700,6 +733,7 @@
                             <div class="product-mdl-img product-mdl-img3">
                                 <h5>美容</h5>
                             </div>
+                        </a>
                     </div>
                 </div>
                 <div class="col-6 col-md-2">
@@ -709,7 +743,7 @@
                                 <h5>外出</h5>
                             </div>
                         </a>
-                        </a>
+
                     </div>
                 </div>
                 <div class="col-6 col-md-2">
@@ -837,12 +871,8 @@
                 </div>
             </div>
         </div>
-        <div class="lightbox" id="lightbox1">
+        <a href="#product"><div class="lightbox" id="lightbox1" style="z-index: 1">
             <div class="lightbox-content">
-                <a href="#product">
-                    <div class="lightbox-close">x</div>
-                </a>
-
                 <div class="lightbox-img lightbox-img1">
                 </div>
                 <div class="lightbox-text lightbox-text1">
@@ -850,12 +880,12 @@
                 </div>
             </div>
         </div>
+    </a>
 
-        <div class="lightbox" id="lightbox2">
+    <a href="#product"><div class="lightbox" id="lightbox2" style="z-index: 1">
             <div class="lightbox-content">
-                <a href="#product">
-                    <div class="lightbox-close">x</div>
-                </a>
+              
+                   
 
                 <div class="lightbox-img lightbox-img2">
                 </div>
@@ -864,12 +894,13 @@
                 </div>
             </div>
         </div>
-
-        <div class="lightbox" id="lightbox3">
+    </a>
+    <a href="#product">
+        <div class="lightbox" id="lightbox3" style="z-index: 1">
             <div class="lightbox-content">
-                <a href="#product">
-                    <div class="lightbox-close">x</div>
-                </a>
+               
+            
+               
 
                 <div class="lightbox-img lightbox-img3">
                 </div>
@@ -878,12 +909,13 @@
                 </div>
             </div>
         </div>
-
-        <div class="lightbox" id="lightbox4">
+    </a>
+    <a href="#product">
+        <div class="lightbox" id="lightbox4" style="z-index: 1">
             <div class="lightbox-content">
-                <a href="#product">
-                    <div class="lightbox-close">x</div>
-                </a>
+               
+             
+             
 
                 <div class="lightbox-img lightbox-img4">
                 </div>
@@ -892,12 +924,13 @@
                 </div>
             </div>
         </div>
-
-        <div class="lightbox" id="lightbox5">
+    </a>
+    <a href="#product">
+        <div class="lightbox" id="lightbox5" style="z-index: 1">
             <div class="lightbox-content">
-                <a href="#product">
-                    <div class="lightbox-close">x</div>
-                </a>
+              
+        
+                
 
                 <div class="lightbox-img lightbox-img5">
                 </div>
@@ -906,13 +939,10 @@
                 </div>
             </div>
         </div>
-
-        <div class="lightbox" id="lightbox6">
+    </a>
+    <a href="#product">
+        <div class="lightbox" id="lightbox6" style="z-index: 1">
             <div class="lightbox-content">
-                <a href="#product">
-                    <div class="lightbox-close">x</div>
-                </a>
-
                 <div class="lightbox-img lightbox-img6">
                 </div>
                 <div class="lightbox-text lightbox-text6">
@@ -920,6 +950,7 @@
                 </div>
             </div>
         </div>
+    </a>
     </section>
 
 
@@ -1154,6 +1185,8 @@
         </script>
 
 
+
+
     <!-- Swiper JS -->
     <script src="https://unpkg.com/swiper/js/swiper.js"></script>
     <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
@@ -1184,29 +1217,6 @@
     </script>
 
 
-    <!-- 原本的Swiper 啟動碼 -->
-    <!-- <script>
-        var swiper = new Swiper('.swiper-container', {
-            // spaceBetween: 10,
-            speed: 3000,
-            loop : true,//复制多份循环(这里就是让轮播看起来是循环的，去掉这个就恢复了默认的swiper轮播)
-            centeredSlides: true,
-            autoplay: {
-                delay: 2500,
-                disableOnInteraction: false,                
-            },
-            pagination: {
-                el: '.swiper-pagination',
-                clickable: true,
-            },
-            navigation: {
-                nextEl: '.swiper-button-next',
-                prevEl: '.swiper-button-prev',
-            },
-        });
-    </script> -->
-
-
     <!-- AOS script -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js">
     </script>
@@ -1215,10 +1225,16 @@
         AOS.init();
     </script>
 
+    <!-- cdn for jQuery  -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
 
 
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/jquery.scrollTo.js"></script>
 
 
 </body>
+
 
 </html>

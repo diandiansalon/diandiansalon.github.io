@@ -64,6 +64,7 @@ h6 {
 body {
   margin: 0;
   padding: 0;
+  scroll-behavior: smooth;
 }
 
 #shopping {
@@ -140,6 +141,7 @@ section#banner .img3 {
 }
 
 section#banner .container {
+  scroll-behavior: smooth;
   position: relative;
 }
 
@@ -1715,6 +1717,7 @@ section#product .lightbox {
       -ms-flex-align: center;
           align-items: center;
   display: none;
+  z-index: 1;
 }
 
 section#product .lightbox .lightbox-content {
@@ -1777,20 +1780,8 @@ section#product .lightbox .lightbox-content .lightbox-text6 {
   background-color: #6C7091;
 }
 
-section#product .lightbox .lightbox-content .lightbox-close {
-  width: 15px;
-  height: 15px;
-  background-color: #464343;
-  position: absolute;
-  top: -15px;
-  right: 0;
-  text-align: center;
-  line-height: 15px;
-  color: white;
-  font-size: 10pt;
-}
-
 section#product .lightbox .lightbox-img {
+  z-index: 99;
   background-size: cover;
   background-position: center;
 }
@@ -2305,11 +2296,13 @@ section#dog-leader h6 {
 }
 
 section#dog-leader .dog-img {
-  width: 100%;
+  width: 50vw;
   height: 514px;
+  background-image: url("./12-members-transition/dog.jpg");
   background-size: cover;
   background-position: center;
-  background-image: url("./12-members-transition/dog.jpg");
+  margin: auto;
+  z-index: 5;
 }
 
 section#dog-leader .dog-img .hi {
