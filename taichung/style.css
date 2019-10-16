@@ -1,0 +1,273 @@
+
+
+/* Please ❤ this if you like it! */
+
+
+@import url('https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&subset=devanagari,latin-ext');
+
+/* #Primary
+================================================== */
+
+body{
+	font-size: 15px;
+    letter-spacing: 3.5px;
+	font-family: 'Noto Sans TC', sans-serif;
+	line-height: 24px;
+	font-weight: 400;
+	color: #212112;
+	text-shadow: #212112;
+	background-color:white;
+	background-color: rgba(179, 27, 27, 0);
+	overflow-x: hidden;
+    transition: all 200ms linear;
+}
+::selection {
+	color: rgba(255, 255, 255, 0.8);
+	background-color: #8167a94f;
+}
+/* ::-moz-selection {
+	color: rgba(255, 255, 255, 0);
+	background-color: #8167a9;
+} */
+
+
+/* #Navigation
+================================================== */
+
+.start-header {
+	opacity: 1;
+	transform: translateY(0);
+	padding: 116px 0;
+	/* box-shadow: 0 10px 30px 0 rgba(138, 155, 165, 0.15); */
+	-webkit-transition : all 0.3s ease-out;
+	transition : all 0.3s ease-out;
+}
+.start-header.scroll-on {
+	box-shadow: 0 5px 10px 0 rgba(138, 155, 165, 0.15);
+	padding: 5px 0;
+	-webkit-transition : all 0.3s ease-out;
+	transition : all 0.3s ease-out;	
+}
+.start-header.scroll-on .navbar-brand img{
+	height: 28px;
+	-webkit-transition : all 0.3s ease-out;
+	transition : all 0.3s ease-out;
+}
+.navigation-wrap{
+	position: fixed;
+	width: 100%;
+	top: 0;
+	left: 0;
+	z-index: 1000;
+	-webkit-transition : all 0.3s ease-out;
+	transition : all 0.3s ease-out;
+}
+.navbar{
+	padding: 0;
+	
+}
+
+
+/* 手機版menu選單垂直置中 */
+.navbar-nav{
+	align-items: center;
+}
+
+/* 網頁版logo的圖案*/
+.navbar-brand img{
+	height: 120px;
+	width: auto;
+	/* display: block; */
+	-webkit-transition : all 0.3s ease-out;
+	transition : all 0.3s ease-out;	
+}
+/* 手機版logo的圖案尺寸縮小、往上移動 */
+@media(max-width: 992px){.navbar-brand img{
+	height: 60px;
+	/* position:absolute; */
+	top:-100px;		
+}}
+
+/* 開關的外框與否 */
+.navbar-toggler {
+	float: right;
+	border: none;
+	padding-right: 0;
+}
+.navbar-toggler:active,
+.navbar-toggler:focus {
+	outline: none;
+}
+
+/* 開關裡面最底下的線 */
+.navbar-light .navbar-toggler-icon {
+	width: 24px;
+	height: 17px;
+	background-image: none;
+	position: relative;
+	border-bottom: 1px solid white;
+    transition: all 300ms linear;
+}
+
+/* 開關裡面第一層第二層的線 */
+.navbar-light .navbar-toggler-icon:after, 
+.navbar-light .navbar-toggler-icon:before{
+	width: 24px;
+	position: absolute;
+	height: 1px;
+	background-color:white;
+	top: 0;
+	left: 0;
+	content: '';
+	z-index: 2;
+    transition: all 300ms linear;
+}
+
+/* 開關裡面最底下的線與上面的線的距離 */
+.navbar-light .navbar-toggler-icon:after{
+	top: 8px;
+}
+.navbar-toggler[aria-expanded="true"] .navbar-toggler-icon:after {
+	transform: rotate(45deg);
+}
+.navbar-toggler[aria-expanded="true"] .navbar-toggler-icon:before {
+	transform: translateY(8px) rotate(-45deg);
+}
+.navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
+	border-color: transparent;
+}
+
+/* 手機版menu的內文 */
+.nav-link{
+	color:white !important;
+	font-weight: 500;
+    transition: all 200ms linear;
+}
+.nav-item:hover .nav-link{
+	color: white !important;		
+}
+
+.nav-item.active .nav-link{
+	color: #777 !important;
+}
+.nav-link {
+	position: relative;
+	padding: 5px 0 !important;
+	display: inline-block;
+}
+
+/* 網頁版底下的線 */
+.nav-item:after{
+	position: absolute;
+	bottom: -5px;	
+	left: 0;
+	width: 100%;
+	height: 1.8px;	
+	content: ""	;
+	background-color:white;
+	opacity: 0;
+    transition: all 200ms linear;
+}
+.nav-item:hover:after{
+	bottom: 0;
+	opacity: 1;
+}
+
+.nav-item{
+	position: relative;
+    transition: all 200ms linear;
+}
+
+/* #Primary style
+================================================== */
+
+.bg-light {
+	background-color: rgba(197, 27, 27, 0) !important;
+    transition: all 200ms linear;
+}
+.section {
+    position: relative;
+	width: 100%;
+	display: block;
+}
+.full-height {
+    height: 100vh;
+}
+.over-hide {
+    overflow: hidden;
+}
+.absolute-center {
+	position: absolute;
+	top: 50%;
+	left: 0;
+	width: 100%;
+  margin-top: 40px;
+	transform: translateY(-50%);
+	z-index: 20;
+}
+h1{
+	font-size: 48px;
+	line-height: 1.2;
+	font-weight: 700;
+	color: #212112;
+	text-align: center;
+}
+p{
+	text-align: center;
+	margin: 0;
+	padding-top: 10px;
+	opacity: 1;
+	transform: translate(0);
+    transition: all 300ms linear;
+    transition-delay: 1700ms;
+}
+
+
+
+/* #Media
+================================================== */
+
+@media (max-width: 768px) { 
+	h1{
+		font-size: 38px;
+	}
+
+	/* 手機版menu底下的線 */
+	.nav-item:after{
+		display: block;
+		height:0.85px;
+	}
+	.nav-item::before {
+		position: absolute;
+		display: block;
+		top: 10px;
+		left: 0;
+		content: "";
+		border: none;
+		background-image: url(./01-banner/Banner-button-hover-Tsu.png);
+		width: 14px;
+		height: 14px;
+		background-size: cover;
+		background-position: center;
+		
+	}
+	
+} 
+
+/* Solid class attached on scroll past first section */
+.navbar1.solid {
+	background: linear-gradient(to left, rgba(150, 27, 103, 0.6) 0%, rgba(128, 58, 76, 0.6) 30%, rgba(128, 58, 76, 0.7) 100%);
+	transition: background-color 1s ease 0s;
+	margin-top:-5px;
+	margin-bottom: -5px;
+	/* box-shadow: 0 0 4px grey; */
+  }
+  .navbar.solid .navbar-brand {
+	color: #C57ED3;
+	transition: color 1s ease 0s;
+  }
+  .navbar.solid .nav-link  {
+	color: #C57ED3;
+	transition: color 1s ease 0s;
+  }
+ 
