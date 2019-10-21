@@ -1752,12 +1752,12 @@ section#product {
             }
 
             .product-mdl-img1 {
-                background-image: url('/product-icon/feed.jpg');
+                background-image: url('./product-icon/feed.jpg');
                 background-size: cover;
             }
 
             .product-mdl-img2 {
-                background-image: url('/product-icon/bone.jpg');
+                background-image: url('./product-icon/bone.jpg');
                 background-size: cover;
             }
 
@@ -2188,7 +2188,7 @@ section#dog-leader {
         background-image: url('./12-members-transition/dog.jpg');
         background-size: cover;
         background-position: center;
-        .margin: auto;
+        margin: auto;
         z-index: 5;
 
         .hi {

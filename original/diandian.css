@@ -107,6 +107,11 @@ section#banner {
   height: 100vh;
 }
 
+section#banner a {
+  text-decoration: none;
+  color: white;
+}
+
 section#banner .img1 {
   height: 100%;
   width: 100%;
@@ -1864,12 +1869,12 @@ section#product .container .product-mdl .product-mdl-img:hover h5 {
 }
 
 section#product .container .product-mdl .product-mdl-img1 {
-  background-image: url("/product-icon/feed.jpg");
+  background-image: url("./product-icon/feed.jpg");
   background-size: cover;
 }
 
 section#product .container .product-mdl .product-mdl-img2 {
-  background-image: url("/product-icon/bone.jpg");
+  background-image: url("./product-icon/bone.jpg");
   background-size: cover;
 }
 
