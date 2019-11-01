@@ -2183,13 +2183,16 @@ section#dog-leader {
     }
 
     .dog-img {
-        width: 50vw;
+        width: 90vw;
         height: 514px;
         background-image: url('./12-members-transition/dog.jpg');
         background-size: cover;
         background-position: center;
         margin: auto;
         z-index: 5;
+        @media(min-width:576px){
+            width: 80vw;
+        }
 
         .hi {
             padding-top: 6%;
